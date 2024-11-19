@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threatinsights - The Cyber Threat Intelligence Specialists</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/soc-tools.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <aside class="sidebar">
+        <nav class="flex-column navbar navbar-expand-md p-0">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+          <button
+            class="border-0 navbar-toggler p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="assets/img/hamburger.svg" alt="" />
+          </button>
+          <div
+            class="collapse navbar-collapse w-100"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav w-100 flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="assets/img/dark_web_icon.svg" alt="" /> Dark Web
+                  Report</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img
+                    src="assets/img/external_attack_surface_icon.svg"
+                    alt=""
+                  />
+                  External Attack Surface</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="assets/img/dark_mirror_icon.svg" alt="" />
+                  DarkMirror</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ip-reputation.html"
+                  ><img src="assets/img/soc_tools_icon.svg" alt="" /> SOC
+                  Tools</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <div class="soc-tools-container">
+          <div class="row input-area justify-content-center">
+            <div class="service-choice col-10 justify-content-center d-flex">
+              <div class="service-choice-block">
+                <div id="ipReputation" class="icon-area active"></div>
+                <p>IP Reputation</p>
+              </div>
+              <div class="service-choice-block">
+                <div id="phishingRadar" class="icon-area"></div>
+                <p>Phishing Radar</p>
+              </div>
+              <div class="service-choice-block">
+                <div id="dosResilience" class="icon-area"></div>
+                <p>DoS Resilience</p>
+              </div>
+              <div class="service-choice-block">
+                <div id="vpnSecurity" class="icon-area"></div>
+                <p>VPN Security</p>
+              </div>
+              <div class="service-choice-block">
+                <div id="emailAnalyzer" class="icon-area"></div>
+                <p>Email Analyzer</p>
+              </div>
+              <div class="service-choice-block">
+                <div id="emailGrader" class="icon-area"></div>
+                <p>Email Grader</p>
+              </div>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div
+                class="row soc-tools-submit-row"
+                style="align-items: center; display: flex"
+              >
+                <div class="icon-area title-icon">
+                  <img
+                    src="/labs/static/img/icon/service/soc_tools_white.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="title-content">
+                  <p class="title-content-p">Full Featured Tools</p>
+                  <h1 class="title-content-h1">SOC Tools</h1>
+                </div>
+                <form
+                  id="socToolsForm"
+                  class="row soc-tools-submit-row"
+                  enctype="multipart/form-data"
+                  data-hs-cf-bound="true"
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    "
+                  >
+                    <div class="search-bar">
+                      <label class="custom-file-upload" style="cursor: auto">
+                        <span class="search-text-container">
+                          <img src="/labs/static/img/icon/search.svg" alt="" />
+                          <span class="service-search-text"></span>
+                        </span>
+                        <span class="label">Please select an EML file</span>
+                        <input
+                          id="socToolsInput"
+                          placeholder="Search on the IP Reputation. Enter IP, IP Block or domain..."
+                          type="text"
+                        />
+                      </label>
+                    </div>
+                    <span id="pleaseWait" class="please-wait"
+                      >This operation could take more than 15 seconds. Please
+                      wait...</span
+                    >
+                  </div>
+                  <button
+                    class="soc-tools-submit-btn"
+                    id="socToolsSubmit"
+                    type="button"
+                    data-toggle="modal"
+                  >
+                    <span>Search</span>
+                    <div class="loading">
+                      <div class="item loading-ball-1"></div>
+                      <div class="item loading-ball-2"></div>
+                      <div class="item loading-ball-3"></div>
+                    </div>
+                  </button>
+                </form>
+              </div>
+              <span
+                id="inputErr"
+                class="col-12 input-error"
+                style="max-height: 25px; display: none"
+              ></span>
+              <span class="dont-include" style="display: none">
+                <span class="check-box"></span>Don't include my report in the
+                public results.
+              </span>
+              <div class="service-info col-12">
+                <p>
+                  SOC Tools are the next generation tools to investigate the
+                  everyday incidents like phishing, malware, account breach,
+                  etc. These tools are built on SOCRadar bigdata platform and
+                  includes machine learning and advanced behavioral analytics.
+                </p>
+              </div>
+            </div>
+            <div class="service-cards-container row">
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/ip_reputation_white.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>IP Reputation</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      The IP Reputation Service allows you to make a search to
+                      find out if your IP or IP block is among any blacklist.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/phishing_radar_white.svg"
+                      alt=""
+                      class="phishing-radar"
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>Phishing Radar</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      The Phishing Radar service generate possible words from
+                      your domain name and search those words in all domain name
+                      databases to detect domain spoofing and phishing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/dos_resilience_white.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>DoS Resilience</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      The DoS Resilience Service allows you to check your
+                      domain's or subnet's resilience against DoS attacks such
+                      as slowloris attack etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/vpn_security.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>VPN Security</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      VPN Radar is a non-disruptive and immediate testing
+                      solution that can verify the presence of malware or
+                      bot-infected devices used for VPN, as well as unpatched
+                      critical vulnerabilities, cryptographic infrastructure
+                      issues, and MITM risks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/email_security_grader_white.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>Email Security Grader</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      Email Security Grader performs passive and active checks
+                      which techniques used in cyber attacks. Afterwards, it
+                      completes its work by making checks on threat
+                      intelligence.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-12 card-block">
+                <div class="service-card puffy-shadow row">
+                  <div class="icon-area">
+                    <img
+                      src="assets/img/email_threat_analyzer_white.svg"
+                      alt=""
+                      class="email-threat-analyzer"
+                    />
+                  </div>
+                  <div class="title-content title-content-card">
+                    <p>Check For</p>
+                    <h1>Email Threat Analyzer</h1>
+                  </div>
+                  <div class="col-12 card-content">
+                    <p>
+                      E-mail threat analyzer services helps can detect either an
+                      e-mail is scam or not. Analyze your e-mails in seconds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <p id="copyright">
+            Copyright © 2024 Threatinsights<br />All rights reserved.
+          </p>
+          <div class="footer-icons">
+            <a href="https://x.com/">
+              <img src="assets/img/twitter_icon.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/">
+              <img src="assets/img/linkedin_icon.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/">
+              <img src="assets/img/youtube_icon.svg" alt="" />
+            </a>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

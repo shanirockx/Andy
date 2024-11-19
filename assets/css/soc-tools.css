@@ -1,0 +1,1188 @@
+.soc-tools-container {
+  background: white;
+  margin: 130px 87px;
+  font-family: "Mazzard";
+  justify-content: center;
+}
+
+.service-choice {
+  margin-bottom: 30px;
+}
+
+.service-choice-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  font-size: 13px;
+  color: #0a2342;
+  width: 100px;
+}
+
+.icon-area {
+  width: 61px;
+  height: 61px;
+  background: #0a2342;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.service-choice-block .icon-area {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 9px;
+  border: 1px solid #0a2342;
+  background: white;
+  /* telep */
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.service-choice-block {
+  cursor: pointer;
+}
+
+.service-choice img {
+  width: 22px;
+  height: 22px;
+}
+
+.soc-tools-submit-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.title-content p {
+  color: #ff4562;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.title-content h1 {
+  font-weight: 400;
+  font-size: 21px;
+  color: #0a2342;
+}
+
+.input-area {
+  margin-bottom: 81px;
+}
+
+.service-info {
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+#inputErr {
+  display: none;
+  text-align: center;
+  color: #ff4562;
+  margin-top: 12px;
+}
+
+.service-info p {
+  text-align: center;
+  width: 758px;
+  font-size: 15px;
+  color: #333333;
+  margin: 0 auto;
+}
+
+.service-cards-container {
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  transition: 0.3s;
+  padding: 32px 35px;
+  border-radius: 21px;
+  align-items: flex-start;
+  align-content: flex-start;
+  min-height: 250px;
+  height: 100%;
+}
+
+.service-card .icon-area {
+  margin-right: 10px;
+  position: relative;
+}
+
+.service-card .card-content p {
+  font-size: 14px;
+  text-align: justify;
+  color: #333333;
+  margin: 28px 0 0 0;
+}
+
+.card-block {
+  margin: 9px 0 58px 0;
+  padding: 0 46px;
+}
+
+.service-card .card-content {
+  padding: 0px;
+}
+
+.service-card .ioc-radar {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+
+.service-card .email-threat-analyzer {
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+
+#socToolsSubmit {
+  width: 141px;
+  height: 59px;
+  border-radius: 101px;
+  border: none;
+  background: #ff4562;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 17px;
+  padding: 20px 41px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:active {
+  outline: none !important;
+  border: none !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.puffy-shadow {
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.11);
+}
+
+.soc-pink {
+  color: #ff4562;
+}
+
+.soc-blue {
+  color: #0a2342;
+}
+
+.icon-area.active {
+  background: #0a2342;
+}
+
+#dosResilience {
+  background-image: url("../../img/icon/service/dos_resilience_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#emailGrader {
+  background-image: url("../../img/icon/service/email_security_grader_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#iocRadar {
+  background-image: url("../../img/icon/service/ioc_radar_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#ipReputation {
+  background-image: url("../../img/icon/service/ip_reputation_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#vpnSecurity {
+  background-image: url("../../img/icon/service/vpn_security_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#phishingRadar {
+  background-image: url("../../img/icon/service/phishing_radar_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#emailAnalyzer {
+  background-image: url("../../img/icon/service/email_threat_analyzer_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#xtiPrePOC {
+  background-image: url("../../img/icon/service/email_threat_analyzer_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#dosResilience.active {
+  background-image: url("../../img/icon/service/dos_resilience_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#emailGrader.active {
+  background-image: url("../../img/icon/service/email_security_grader_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#iocRadar.active {
+  background-image: url("../../img/icon/service/ioc_radar_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#vpnSecurity.active {
+  background-image: url("../../img/icon/service/vpn_security.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#ipReputation.active {
+  background-image: url("../../img/icon/service/ip_reputation_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#phishingRadar.active {
+  background-image: url("../../img/icon/service/phishing_radar_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#emailAnalyzer.active {
+  background-image: url("../../img/icon/service/email_threat_analyzer_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#xtiPrePOC.active {
+  background-image: url("../../img/icon/service/email_threat_analyzer_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+#socToolsInput::placeholder {
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+
+.hey {
+  display: none;
+}
+
+.hey.active {
+  display: block;
+}
+
+.hey img {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 110px;
+  display: block;
+  float: none !important;
+}
+
+.hey h1 {
+  font-family: "Mazzard";
+  font-size: 102px;
+  line-height: 179px;
+  text-align: center;
+  color: #ff4562;
+  margin-top: 110px;
+  font-weight: 600;
+}
+
+.hey-action-buttons-wrapper {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hey-action-button {
+  width: 190px;
+  height: 60px;
+  border-radius: 5px;
+  background: #ff4562;
+  cursor: pointer;
+  font-family: "Mazzard";
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 61px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.dont-include {
+  font-size: 15px;
+  color: #000000;
+  max-width: 450px;
+  font-weight: 200;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+.check-box {
+  width: 20px;
+  height: 20px;
+  background: #ec647c;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 0px 2px rgba(0, 0, 0, 0.14);
+  display: block;
+  float: left;
+  position: relative;
+  left: -5%;
+}
+
+.check {
+  background-image: var(--cross_white_icon_url); /* The image used */
+  height: 20px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 12px; /* Resize the background image to cover the entire container */
+}
+
+#errorMsg {
+  font-family: "Mazzard";
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 38px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.email-analyzer {
+  cursor: pointer;
+}
+
+#socToolsInput {
+  width: 90%;
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  border: none;
+}
+
+.search-bar {
+  margin-left: 27px;
+}
+
+.search-bar label {
+  width: 873px;
+  height: 59px;
+  border-radius: 101px;
+  border: 2px solid #ff4562;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a2342;
+  position: relative;
+}
+
+.search-bar.active {
+  width: 873px;
+  height: 59px;
+  border-radius: 101px;
+  border: 2px solid #ff4562;
+  padding: 22px 29px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a2342;
+  margin-left: 17px;
+}
+
+input:disabled {
+  background: white;
+}
+
+input[type="file"] {
+  display: none !important;
+  cursor: pointer;
+}
+
+.custom-file-upload.active {
+  border: 2px solid #ff4562;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a2342;
+}
+
+.custom-file-upload .label {
+  display: none;
+}
+
+.search-text-container {
+  display: none;
+}
+
+.please-wait {
+  display: none;
+}
+
+.please-wait {
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  position: relative;
+}
+
+.search-bar-loading .search-text-container {
+  margin-top: 7px;
+  margin-left: 7px;
+  background: #0a2342;
+  color: white;
+  height: 41px;
+  border-radius: 59px;
+  text-align: center;
+  padding: 9px 0;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-loading .search-text-container img {
+  width: 14px;
+  margin: 0 3px;
+  float: left;
+  position: relative;
+  top: 4px;
+  left: 10px;
+  margin-right: 7px;
+}
+
+.custom-file-upload .label.active {
+  width: 100%;
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  color: #757575;
+  border: none;
+  display: block;
+}
+
+.search-bar-loading .search-text-container img {
+  display: block;
+}
+
+.service-search-text {
+  padding-left: 10px;
+  padding-right: 20px;
+  max-width: 310px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 500px) {
+  .check-box {
+    left: 15px !important;
+  }
+  .please-wait {
+    width: 340px;
+  }
+  .hey-action-button {
+    width: 140px;
+  }
+  .nodata {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .nodata .row {
+    margin-right: 0;
+  }
+  .nodata-img {
+    width: 80% !important;
+    margin-right: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1440px) {
+  .search-bar label {
+    width: 600px;
+  }
+
+  .please-wait {
+    font-size: 15px;
+  }
+
+  .search-bar-loading .service-search-text {
+    max-width: 156px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .search-bar label {
+    width: 440px;
+  }
+
+  .please-wait {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .search-bar-loading .service-search-text {
+    max-width: 156px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .icon-area {
+    width: 51px;
+    height: 51px;
+  }
+
+  .service-card .icon-area img {
+    width: 25px;
+  }
+
+  .title-content p {
+    font-size: 14px;
+  }
+
+  .title-content h1 {
+    font-size: 16px;
+    color: #0a2342;
+  }
+
+  .service-card .icon-area {
+    margin-right: 5px;
+  }
+
+  .card-block {
+    padding: 30px;
+  }
+
+  .service-card .card-content p {
+    font-size: 12px;
+  }
+
+  .service-card .ioc-radar {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+  }
+
+  .service-card .email-threat-analyzer {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+  }
+
+  .service-card .phishing-radar {
+    width: 20px !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .service-card .card-content p {
+    font-size: 17px;
+  }
+
+  .title-content p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .title-content h1 {
+    font-size: 30px;
+  }
+
+  .icon-area {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-card .icon-area img {
+    width: 35px;
+  }
+
+  .service-card .phishing-radar {
+    width: 30px !important;
+  }
+
+  .service-card .ioc-radar {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+  }
+
+  .service-card .email-threat-analyzer {
+    position: absolute;
+    top: 18px;
+    left: 21px;
+  }
+}
+
+/* send mail modal */
+.result_illustration {
+  max-width: 270px;
+  margin: 0 auto;
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 772px;
+  position: relative;
+}
+
+#downloadModal h1 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+  color: #0a2342;
+}
+
+.modal-description {
+  max-width: 600px;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  color: #0a2342;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 50px;
+}
+
+.mail-input-area-wrapper {
+  width: 330px;
+  margin: 33px auto;
+  margin-bottom: 50px;
+}
+
+.mail-input-area-wrapper {
+  width: 330px;
+  margin: 33px auto;
+  margin-bottom: 50px;
+}
+
+.mail-input-area {
+  float: left;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 275px;
+  height: 50px;
+}
+
+.mail-icon-circle {
+  width: 40px;
+  height: 40px;
+  background: #0a2342;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 4px;
+  margin-top: 4px;
+  float: left;
+}
+
+.mail-input-area-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mail-icon {
+  width: 22px !important;
+}
+
+#mailInput {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 6px;
+  border: none;
+  width: 209px;
+}
+
+.mail-send-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0a2342;
+  float: right;
+  position: relative;
+  margin-top: 1.7px;
+}
+
+.mail-send-button:hover {
+  cursor: pointer !important;
+}
+
+.mail-send-button img {
+  width: 30px;
+}
+
+.before-send {
+  display: none;
+}
+
+.before-send img {
+  width: 130px;
+}
+
+.before-send .modal-description {
+  margin-bottom: 28px;
+}
+
+#mailAddressError {
+  display: none;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #ef899b;
+  padding-top: 73px;
+}
+
+/* email grader modal */
+.email-grader-content {
+  text-align: center;
+  color: #0a2342;
+}
+
+.email-grader-content .close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+/*Loading animation*/
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 24px;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  animation: load-ball 0.5s ease-in-out infinite alternate;
+}
+
+.loading-ball-1 {
+  background: #fff;
+  animation-delay: 0.1s;
+}
+
+.loading-ball-2 {
+  background: #fff;
+  animation-delay: 0.2s;
+}
+
+.loading-ball-3 {
+  background: #fff;
+  animation-delay: 0.3s;
+}
+
+@keyframes load-ball {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+
+/*CheckBox CSS*/
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+.control input:checked ~ .control__indicator {
+  background: #0a2342;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0a2342;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+
+.agreement a {
+  color: #0a2342;
+  font-weight: 600;
+}
+
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+@media (max-width: 1025px) {
+  .service-choice-block {
+    width: 84px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .service-choice-block {
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+    flex: none !important;
+  }
+  .title-content-card {
+    margin: 0 15px !important;
+  }
+  .soc-tools-container {
+    margin: 130px 10px;
+  }
+  .card-block {
+    margin: 0 0 10px 15px;
+    padding: 0;
+    max-width: 90%;
+  }
+  .input-area {
+    margin-bottom: 40px;
+  }
+  .service-card {
+    padding: 25px 25px;
+    width: 100%;
+    height: auto;
+  }
+  .service-card .card-content p {
+    font-size: 15px;
+  }
+  .card-block {
+    max-width: 100%;
+  }
+  .service-info {
+    margin: 20px 0 0 0;
+  }
+  .service-info p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .service-cards-container {
+    margin-top: 10px;
+    width: 94%;
+  }
+  .search-bar label {
+    width: 100%;
+  }
+  .soc-tools-submit-btn {
+    width: 100%;
+  }
+
+  #socToolsInput {
+    top: 15px;
+    left: 15px;
+  }
+
+  #socToolsSubmit {
+    margin-left: 0;
+  }
+
+  .title-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .soc-tools-submit-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .service-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-choice {
+    display: flex;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
+  .soc-tools-submit-row {
+    flex-direction: column;
+  }
+  .service-choice-block {
+    width: 35px;
+    justify-content: flex-start;
+    font-size: 11px;
+    text-align: center;
+  }
+  .service-choice-block .icon-area {
+    width: 35px;
+    height: 35px;
+  }
+  .puffy-shadow {
+    border: 0.1px solid #000;
+  }
+
+  .title-content {
+    display: flex;
+    margin: 0 0 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-content p {
+    font-size: 15px;
+  }
+  .search-bar {
+    margin-left: 0px;
+    min-width: 300px;
+  }
+  .check-box {
+    left: 10%;
+  }
+
+  .dont-include {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 !important;
+    margin-top: 15px !important;
+  }
+  .input-error {
+    font-size: 14px;
+  }
+}
+
+.no-record-container {
+  margin-bottom: 62px;
+  display: block;
+}
+
+.nodata-img {
+  width: 40%;
+}
+
+.nodata-msg {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nodata {
+  display: none;
+}
+
+.nodata-goback {
+  background-color: #ffffff;
+  border: 2px solid #424265;
+  color: #424265;
+  text-align: center;
+}
+
+.nodata-use-free {
+  background-color: #ff4562;
+}
+
+.nodata-record-not-found {
+  color: #424265;
+  font-size: 40px;
+}
+
+.back-button {
+  width: 13%;
+  position: relative;
+  right: 10px;
+}
+
+.nodata-hey-action-button {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nodata-il {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nodata-il-img-line {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
