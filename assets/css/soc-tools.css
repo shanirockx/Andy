@@ -64,7 +64,7 @@
 }
 
 .title-content p {
-  color: #ff4562;
+  color: #2F90B0;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 0;
@@ -88,7 +88,7 @@
 #inputErr {
   display: none;
   text-align: center;
-  color: #ff4562;
+  color: #2F90B0;
   margin-top: 12px;
 }
 
@@ -153,7 +153,7 @@
   height: 59px;
   border-radius: 101px;
   border: none;
-  background: #ff4562;
+  background: #2F90B0;
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -177,7 +177,7 @@ button:focus {
 }
 
 .soc-pink {
-  color: #ff4562;
+  color: #2F90B0;
 }
 
 .soc-blue {
@@ -189,112 +189,112 @@ button:focus {
 }
 
 #dosResilience {
-  background-image: url("../../img/icon/service/dos_resilience_dark.svg");
+  background-image: url("../img/dos_resilience_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #emailGrader {
-  background-image: url("../../img/icon/service/email_security_grader_dark.svg");
+  background-image: url("../img/email_security_grader_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #iocRadar {
-  background-image: url("../../img/icon/service/ioc_radar_dark.svg");
+  background-image: url("../img/ioc_radar_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #ipReputation {
-  background-image: url("../../img/icon/service/ip_reputation_dark.svg");
+  background-image: url("../img/ip_reputation_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #vpnSecurity {
-  background-image: url("../../img/icon/service/vpn_security_2.svg");
+  background-image: url("../img/vpn_security_2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #phishingRadar {
-  background-image: url("../../img/icon/service/phishing_radar_dark.svg");
+  background-image: url("../img/phishing_radar_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #emailAnalyzer {
-  background-image: url("../../img/icon/service/email_threat_analyzer_dark.svg");
+  background-image: url("../img/email_threat_analyzer_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #xtiPrePOC {
-  background-image: url("../../img/icon/service/email_threat_analyzer_dark.svg");
+  background-image: url("../img/email_threat_analyzer_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #dosResilience.active {
-  background-image: url("../../img/icon/service/dos_resilience_white.svg");
+  background-image: url("../img/dos_resilience_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #emailGrader.active {
-  background-image: url("../../img/icon/service/email_security_grader_white.svg");
+  background-image: url("../img/email_security_grader_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #iocRadar.active {
-  background-image: url("../../img/icon/service/ioc_radar_white.svg");
+  background-image: url("../img/ioc_radar_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #vpnSecurity.active {
-  background-image: url("../../img/icon/service/vpn_security.svg");
+  background-image: url("../img/vpn_security.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #ipReputation.active {
-  background-image: url("../../img/icon/service/ip_reputation_white.svg");
+  background-image: url("../img/ip_reputation_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #phishingRadar.active {
-  background-image: url("../../img/icon/service/phishing_radar_white.svg");
+  background-image: url("../img/phishing_radar_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #emailAnalyzer.active {
-  background-image: url("../../img/icon/service/email_threat_analyzer_white.svg");
+  background-image: url("../img/email_threat_analyzer_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
 }
 
 #xtiPrePOC.active {
-  background-image: url("../../img/icon/service/email_threat_analyzer_white.svg");
+  background-image: url("../img/email_threat_analyzer_white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 22px;
@@ -328,7 +328,7 @@ button:focus {
   font-size: 102px;
   line-height: 179px;
   text-align: center;
-  color: #ff4562;
+  color: #2F90B0;
   margin-top: 110px;
   font-weight: 600;
 }
@@ -345,7 +345,7 @@ button:focus {
   width: 190px;
   height: 60px;
   border-radius: 5px;
-  background: #ff4562;
+  background: #2F90B0;
   cursor: pointer;
   font-family: "Mazzard";
   font-size: 20px;
@@ -419,7 +419,7 @@ button:focus {
   width: 873px;
   height: 59px;
   border-radius: 101px;
-  border: 2px solid #ff4562;
+  border: 2px solid #2F90B0;
   font-size: 16px;
   font-weight: 400;
   color: #0a2342;
@@ -430,7 +430,7 @@ button:focus {
   width: 873px;
   height: 59px;
   border-radius: 101px;
-  border: 2px solid #ff4562;
+  border: 2px solid #2F90B0;
   padding: 22px 29px;
   font-size: 16px;
   font-weight: 400;
@@ -448,7 +448,7 @@ input[type="file"] {
 }
 
 .custom-file-upload.active {
-  border: 2px solid #ff4562;
+  border: 2px solid #2F90B0;
   font-size: 16px;
   font-weight: 400;
   color: #0a2342;
@@ -597,7 +597,7 @@ input[type="file"] {
   }
 
   .card-block {
-    padding: 30px;
+    padding: 30px 25px;
   }
 
   .service-card .card-content p {
@@ -1153,7 +1153,7 @@ input[type="file"] {
 }
 
 .nodata-use-free {
-  background-color: #ff4562;
+  background-color: #2F90B0;
 }
 
 .nodata-record-not-found {
