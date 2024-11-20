@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Threatinsights - The Cyber Threat Intelligence Specialists</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="assets/css/darkmirror.css" /> -->
+    <link rel="stylesheet" href="assets/css/darkmirror.css" />
   </head>
   <body>
     <div class="site-wrapper">
@@ -65,7 +66,84 @@
         </div>
       </aside>
       <main class="main-content">
-        
+        <div class="container">
+          <div class="header-subscribe-area">
+            <div class="header-subscribe-area-buttons">
+              <div
+                class="header-subscribe-area-info-buttons"
+                onclick="showDescription()"
+                id="descriptionButton"
+              >
+                <img
+                  class="cve-trends-info-icon"
+                  src="/labs/static/img/icon/cve_trends/cve_trends_info_icon.svg"
+                  alt=""
+                />
+                <span style="position: relative; top: 1px">Info</span>
+              </div>
+              <div class="header-subscribe-area-subscribe-buttons">
+                <img
+                  src="/labs/static/img/icon/subscribe_bell.png"
+                  alt=""
+                /><span style="position: relative; top: 1px; left: 5px"
+                  >Subscribe</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header" id="darkMirrorDescription">
+            <div class="header-items">
+              <div class="header-items-title">
+                <span>Dark</span>
+                <span>Mirror</span>
+              </div>
+              <div class="header-description">
+                <div class=""></div>
+                <p>
+                  Let's Have a Full Awareness of the Dark Web with Convenience!
+                </p>
+                <p>
+                  Dark Mirror is a SOCRadar Labs service that is powered by
+                  SOCRadar's flagship product, XTI. Although it's been a free
+                  service, the intelligence workflow supporting that service is
+                  simply the human-machine hybrid approach that SOCRadar has
+                  been perfecting for the last four years. Dark Mirror is a
+                  digestion of all the important Dark Web news from various
+                  places that are trending for threat actors like hacker forums,
+                  black markets and also instant messaging platforms like
+                  telegram, ICQ, and discord. This service is crucial for you to
+                  take advantage of that continuously updated source for
+                  discovering the threats on your landscape. (Industry, Country
+                  &amp; Region) Immediately finding out and taking action after
+                  an incident regarding your area of interest occurs. You can
+                  even utilize this service further by joining SOCRadar's free
+                  access, which also includes this service as the “Dark Web
+                  News” module, where you can create automation with the filters
+                  you chose to establish a precise and full awareness over the
+                  Dark Web.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="top-target-tables-row">
+            <div class="row darkmirror-card target-charts m-2">
+              <canvas
+                class="target-charts-canvas"
+                id="countryChart"
+                height="600"
+                width="1074"
+              ></canvas>
+            </div>
+            <div class="row darkmirror-card target-charts m-2">
+              <canvas
+                class="target-charts-canvas"
+                id="industryChart"
+                height="600"
+                width="1074"
+              ></canvas>
+            </div>
+          </div>
+        </div>
         <footer class="footer">
           <p id="copyright">
             Copyright © 2024 Threatinsights<br />All rights reserved.
@@ -84,6 +162,39 @@
         </footer>
       </main>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script>
+      description_status = false;
+
+      function showDescription() {
+        if (description_status === false) {
+          $("#darkMirrorDescription").slideDown();
+          description_status = true;
+          $("#descriptionButton").css("background-color", "#275e77");
+          $("#descriptionButton").css(
+            "-webkit-box-shadow",
+            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
+          );
+          $("#descriptionButton").css(
+            "-moz-box-shadow",
+            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
+          );
+          $("#descriptionButton").css(
+            "box-shadow",
+            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
+          );
+        } else {
+          $("#darkMirrorDescription").slideUp();
+          description_status = false;
+          $("#descriptionButton").css("background-color", "#2F90B0");
+          $("#descriptionButton").css("-webkit-box-shadow", "none");
+          $("#descriptionButton").css("-moz-box-shadow", "none");
+          $("#descriptionButton").css("box-shadow", "none");
+        }
+      }
+    </script>
   </body>
 </html>

@@ -6,8 +6,10 @@
   padding-right: 10px;
 }
 
-.footer {
-  margin-top: 20px !important;
+.darkmirror-card {
+  background: #1a2237;
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.11);
+  border-radius: 13px;
 }
 
 .preview-card {
@@ -91,7 +93,7 @@
   margin-right: 19px;
   width: 40px;
   height: 40px;
-  background-color: #ff4562;
+  background-color: #2f90b0;
   border-radius: 50%;
   background-image: url("/labs/static/img/icon/dws_info_card/download.svg");
   background-position: center;
@@ -208,7 +210,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #ff4562;
+  background-color: #2f90b0;
   border-radius: 7px;
   padding-top: 8px;
   color: white;
@@ -402,7 +404,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #ff4562;
+  background-color: #2f90b0;
   border-radius: 7px;
   padding-top: 8px;
   color: white;
@@ -456,30 +458,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-*:focus {
-  outline: none;
-}
-
-* {
-  text-decoration: none !important;
-}
-
-a:hover {
-  color: unset !important;
-  text-decoration: none;
-}
-
-a {
-  color: unset !important;
 }
 
 textarea:focus,
@@ -538,7 +516,7 @@ hr {
 }
 
 .top-bar a:hover {
-  color: #ff4562 !important;
+  color: #2f90b0 !important;
 }
 
 .panel-group {
@@ -703,7 +681,7 @@ hr {
 }
 
 .access-now-btn {
-  background-color: #ff4562;
+  background-color: #2f90b0;
   border-radius: 5px;
   width: 100%;
   text-align: center;
@@ -1014,88 +992,4 @@ hr {
 
 .grecaptcha-badge {
   visibility: hidden;
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  font-weight: bold;
-  src: url("/labs/static/fonts/SFProDisplay-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  font-weight: normal;
-  src: url("/labs/static/fonts/SFProDisplay-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 100;
-  src: url("/labs/static/fonts/mazzard/MazzardH-Thin.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 200;
-  src: url("/labs/static/fonts/mazzard/MazzardH-ExtraLight.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 300;
-  src: url("/labs/static/fonts/mazzard/MazzardH-Light.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 400;
-  src: url("/labs/static/fonts/mazzard/MazzardH-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 500;
-  src: url("/labs/static/fonts/mazzard/MazzardH-Medium.ttf");
-}
-
-@font-face {
-  font-family: "mazzard";
-  font-weight: 600;
-  src: url("/labs/static/fonts/mazzard/MazzardH-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 700;
-  src: url("/labs/static/fonts/mazzard/MazzardH-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Mazzard";
-  font-weight: 800;
-  src: url("/labs/static/fonts/mazzard/MazzardH-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  src: url("/labs/static/fonts/inter/Inter_18pt-Regular.ttf");
-}
-
-:root {
-  --clock_icon_url: url("/labs/static/img/icon/clock.svg");
-  --eye_icon_url: url("/labs/static/img/icon/eye.svg");
-  --deep-web-report_icon_url: url("/labs/static/img/deep-web-report-bg.svg");
-  --deep-world-map_icon_url: url("/labs/static/img/world-map.png");
-  --cross_white_icon_url: url("/labs/static/img/icon/cross_white.svg");
-  --quotes_left_red_url: url("/labs/static/img/quotes_left_red.svg");
-  --quotes_right_red_url: url("/labs/static/img/quotes_right_red.svg");
-  --plus_icon_url: url("/labs/static/img/plus.png");
-  --news_icon_url: url("/labs/static/img/icon/news.svg");
-  --hashtag_icon_url: url("/labs/static/img/icon/hashtag.svg");
-  --minus_icon_url: url("/labs/static/img/minus.png");
-  --rocket_il_icon_url: url("/labs/static/img/rocket_il.svg");
-  --quotes-left_icon_url: url("/labs/static/img/quotes-left.svg");
-  --quotes-right_icon_url: url("/labs/static/img/quotes-right.svg");
-  --quotes-right_soc_purple_url: url("/labs/static/img/quotes_right_soc_purple.svg");
 }

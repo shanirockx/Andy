@@ -74,8 +74,9 @@ a {
     flex-wrap: wrap;
     min-height: inherit;
   }
-  .site-wrapper .sidebar {
+  .site-wrapper .sidebar .sidebar-outer, .site-wrapper .sidebar {
     width: 100%;
+    min-height: inherit;
   }
   .site-wrapper .sidebar .navbar {
     flex-direction: row !important;
