@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threatinsights - The Cyber Threat Intelligence Specialists</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/result_report.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <aside class="sidebar">
+        <nav class="flex-column navbar navbar-expand-md p-0">
+          <a class="navbar-brand p-0" href="index.html">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+          <button
+            class="border-0 navbar-toggler p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="assets/img/hamburger.svg" alt="" />
+          </button>
+          <div
+            class="collapse navbar-collapse w-100"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav w-100 flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="dark-web-report.html"
+                  ><img src="assets/img/dark_web_icon.svg" alt="" /> Dark Web
+                  Report</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="external-attack-surface.html"
+                  ><img
+                    src="assets/img/external_attack_surface_icon.svg"
+                    alt=""
+                  />
+                  External Attack Surface</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="darkmirror.html"
+                  ><img src="assets/img/dark_mirror_icon.svg" alt="" />
+                  DarkMirror</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ip-reputation.html"
+                  ><img src="assets/img/soc_tools_icon.svg" alt="" /> SOC
+                  Tools</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <div
+          id="deep-web-report-body"
+          class="container deep-web-sonar-result-container"
+        >
+          <div
+            class="row"
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <div class="col-xl-10 col-lg-x12 dark-web-search-result-col">
+              <div
+                class="labs-card d-flex justify-content-around first-look-wrapper"
+                style="height: auto"
+              >
+                <div class="risk-chart-sect">
+                  <div class="scan-box">
+                    <div
+                      class="d-flex"
+                      id="general-scan-state"
+                      style="margin-bottom: -17px"
+                    >
+                      <p class="key">Status:</p>
+                      <p class="value completed" style="margin-left: 5px">
+                        Completed
+                      </p>
+                    </div>
+                  </div>
+                  <div class="risk-chart">
+                    <img
+                      class="custom-gauge-circle"
+                      src="/labs/static/img/custom_gauge.svg"
+                      alt="gauge"
+                    />
+                    <img
+                      class="custom-gauge-needle"
+                      src="/labs/static/img/custom_needle.svg"
+                      alt="gauge-needle"
+                      style="transform: rotate(270deg)"
+                    />
+                    <p style="margin: 0 auto; text-align: center">
+                      Exposure Level
+                    </p>
+                  </div>
+                </div>
+                <div class="labs-card-first-look-border"></div>
+                <div class="first-look-right">
+                  <div class="container">
+                    <div class="report-title">
+                      <p class="dark-web-report-header1" style="color: #ff4562">
+                        Dark Web Scan Result is Here!
+                      </p>
+                      <p><strong>Domain:</strong> mon.com</p>
+                      <p><strong>Scan Date:</strong> 2024-11-13</p>
+                      <p>
+                        <span>Scanned</span> 1 times during the last 12 months
+                        for <strong>mon.com</strong>
+                      </p>
+                      <div class="loading-bar-container">
+                        <div
+                          id="download-button-img"
+                          class="loading-bar-placeholder clickable"
+                          data-cy="dark-web-report-download-full-report-btn"
+                        >
+                          <p id="loading-text" style="display: none">
+                            We are generating your report
+                          </p>
+                          <div class="successful-download-placeholder">
+                            <img
+                              id="completion-image"
+                              style=""
+                              src="/labs/static/img/download_full_report_vector_white.png"
+                              alt=""
+                            />
+                            <p
+                              id="download-full-report-text"
+                              style="display: block"
+                            >
+                              Download Full Report
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="loading-bar"
+                          id="loading-bar"
+                          style="width: 406.547px"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-card-container">
+                <div
+                  id="credentials-stat-card-clickable"
+                  class="clearfix stat-card stat-card-credential-leak clickable"
+                  data-cy="dark-web-report-credentials-stat-card-btn"
+                >
+                  <div
+                    id="credentials-stat-card-scanning"
+                    class="labs-card-status"
+                  >
+                    <div class="loader custom-loader stat-card-loader"></div>
+                    <img
+                      class="stat-card-scanning-img"
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    src="/labs/static/img/icon/dws_info_card/employee_credential_leak.svg"
+                    alt=""
+                  />
+                  <div class="right-side">
+                    <p style="color: #ff4562" class="stat-number">
+                      <span id="stat-card-credentials-count">272</span>
+                    </p>
+                    <p style="color: #424265" class="stat-title">
+                      Employee Credential Leak
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="stealer-logs-for-sale-stat-card-clickable"
+                  class="clearfix stat-card stat-card-stealer-logs-for-sale clickable"
+                  data-cy="dark-web-report-stealer-logs-for-sale-stat-card-btn"
+                >
+                  <div
+                    id="stealer-logs-for-sale-stat-card-scanning"
+                    class="labs-card-status"
+                  >
+                    <div class="loader custom-loader stat-card-loader"></div>
+                    <img
+                      class="stat-card-scanning-img"
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    src="/labs/static/img/icon/dws_info_card/stealer_log_for_sale.svg"
+                    alt=""
+                  />
+                  <div class="right-side">
+                    <p style="color: #ff4562" class="stat-number">
+                      <span id="stat-card-stealer-logs-for-sale-count">25</span>
+                    </p>
+                    <p style="color: #424265" class="stat-title">
+                      Stealer Logs for Sale
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="stealer-logs-stat-card-clickable"
+                  class="clearfix stat-card stat-card-stealer-logs clickable"
+                  data-cy="dark-web-report-stealer-logs-stat-card-btn"
+                >
+                  <div
+                    id="stealer-logs-stat-card-scanning"
+                    class="labs-card-status"
+                  >
+                    <div class="loader custom-loader stat-card-loader"></div>
+                    <img
+                      class="stat-card-scanning-img"
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    src="/labs/static/img/icon/dws_info_card/stealer_log.svg"
+                    alt=""
+                  />
+                  <div class="right-side">
+                    <p style="color: #ff4562" class="stat-number">
+                      <span id="stat-card-stealer-count">42</span>
+                    </p>
+                    <p style="color: #424265" class="stat-title">
+                      Stealer Logs
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="dark-web-hacker-stat-card-clickable"
+                  class="clearfix stat-card stat-card-dark-web-hacker-mentions clickable"
+                  data-cy="dark-web-report-dark-web-hacker-mentions-stat-card-btn"
+                >
+                  <div
+                    id="dark-web-hacker-stat-card-scanning"
+                    class="labs-card-status"
+                  >
+                    <div class="loader custom-loader stat-card-loader"></div>
+                    <img
+                      class="stat-card-scanning-img"
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                  </div>
+                  <img
+                    src="/labs/static/img/icon/dws_info_card/dark_web_mentions.svg"
+                    alt=""
+                  />
+                  <div class="right-side">
+                    <p style="color: #ff4562" class="stat-number">
+                      <span id="stat-card-hacker-dark-web-mentions-count"
+                        >58</span
+                      >
+                    </p>
+                    <p style="color: #424265" class="stat-title">
+                      Dark Web &amp; Hacker Channel Mentions
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="labs-card credentials-card" style="margin-top: 20px">
+                <div class="d-flex justify-content-between labs-card-header">
+                  <div class="labs-card-title">
+                    <img
+                      src="/labs/static/img/icon/external_attack/vuln.svg"
+                      alt=""
+                    />
+                    <p>Employee Credential Leak</p>
+                  </div>
+                  <div id="credentials-scanning" class="labs-card-status">
+                    <div class="loader custom-loader"></div>
+                    <img
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                    <p class="scan-text">Scanning</p>
+                    <p class="complete-text">Completed</p>
+                  </div>
+                </div>
+                <div class="labs-card-body">
+                  <div class="table">
+                    <div
+                      id="credentialsTable_wrapper"
+                      class="dataTables_wrapper form-inline dt-bootstrap no-footer"
+                    >
+                      <div class="dt-toolbar">
+                        <div class="col-xs-8 col-sm-2"></div>
+                        <div
+                          class="col-sm-10 col-xs-12 hidden-xs actions"
+                        ></div>
+                      </div>
+                      <table
+                        class="credentialsTable dataTable no-footer"
+                        id="credentialsTable"
+                        style="width: 100%"
+                        role="grid"
+                      >
+                        <thead style="width: 100%" class="table-hover">
+                          <tr role="row">
+                            <th
+                              style="text-align: left; width: 97px"
+                              class="sorting_disabled text-left"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              Breach Time
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 190px"
+                            >
+                              Credentials Data
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 92px"
+                            >
+                              Source
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td class="text-left">2024-10-27</td>
+                            <td>b****e@mon.com | S****2</td>
+                            <td>COMBOLIST</td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="text-left">2024-10-27</td>
+                            <td>m****m@mon.com | s****7</td>
+                            <td>COMBOLIST</td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="text-left">2024-10-27</td>
+                            <td>w****n@mon.com | e****s</td>
+                            <td>COMBOLIST</td>
+                          </tr>
+                          <tr role="row" class="even blur">
+                            <td class="text-left">2024-10-27</td>
+                            <td>p****s@mon.com | p****6</td>
+                            <td>COMBOLIST</td>
+                          </tr>
+                          <tr role="row" class="odd blur">
+                            <td class="text-left">2024-10-24</td>
+                            <td>m****n@mon.com | m****n</td>
+                            <td>COMBOLIST</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dt-toolbar-footer">
+                        <div class="col-xs-3 col-sm-5"></div>
+                        <div class="col-sm-3 hidden-xs"></div>
+                        <div class="col-xs-9 col-sm-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-more-card">
+                    <div
+                      class="not-found"
+                      style="display: none"
+                      id="credentials-not-found"
+                    >
+                      Credentials Not Found
+                    </div>
+                    <div
+                      class="more-found"
+                      style=""
+                      id="credentials-more-found"
+                    >
+                      <span style="color: #ff4562">+</span
+                      ><span style="color: #ff4562" id="credentials-count"
+                        >269</span
+                      >
+                      Leaks
+                    </div>
+                    <div
+                      class="view-more-btn clickable"
+                      id="credentials-view-more"
+                      data-cy="dark-web-report-credentials-view-more-btn"
+                      style="opacity: 1"
+                    >
+                      View More
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="request-demo" style="margin-top: 20px">
+                <div class="demo-wrapper">
+                  <p>Visualize digital risk and reduce your attack surface</p>
+                  <a
+                    target="_blank"
+                    data-cy="dark-web-report-visualize-risk-btn"
+                    href="https://socradar.io/products/dark-web-monitoring/?utm_campaign=advancedarkwebmonitoring&amp;utm_source=freetools&amp;utm_medium=darkwebreportpage&amp;utm_term=darkwebmonitoring&amp;utm_content=quarrypage"
+                  >
+                    <div class="request-button" style="margin-top: 5px">
+                      Go To Free Edition
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="labs-card stealer-log-sale-card"
+                style="margin-top: 20px"
+              >
+                <div class="d-flex justify-content-between labs-card-header">
+                  <div class="labs-card-title">
+                    <img
+                      src="/labs/static/img/icon/external_attack/related.svg"
+                      alt=""
+                    />
+                    <p>Stealer Logs for Sale</p>
+                  </div>
+                  <div
+                    id="stealer-logs-for-sale-scanning"
+                    class="labs-card-status"
+                  >
+                    <div class="loader custom-loader"></div>
+                    <img
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                    <p class="scan-text">Scanning</p>
+                    <p class="complete-text">Completed</p>
+                  </div>
+                </div>
+                <div class="labs-card-body">
+                  <div class="table">
+                    <div
+                      id="stealerLogsForSaleTable_wrapper"
+                      class="dataTables_wrapper form-inline dt-bootstrap no-footer"
+                    >
+                      <div class="dt-toolbar">
+                        <div class="col-xs-8 col-sm-2"></div>
+                        <div
+                          class="col-sm-10 col-xs-12 hidden-xs actions"
+                        ></div>
+                      </div>
+                      <table
+                        id="stealerLogsForSaleTable"
+                        style="width: 100%"
+                        class="dataTable no-footer"
+                        role="grid"
+                      >
+                        <thead style="width: 100%" class="table-hover">
+                          <tr role="row">
+                            <th
+                              style="text-align: left; width: 156px"
+                              class="sorting_disabled text-left"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              Affected Assets
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 136px"
+                            >
+                              Tag
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 136px"
+                            >
+                              Source
+                            </th>
+                            <th
+                              class="sorting_disabled price-column"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 46px"
+                            >
+                              Price
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td class="text-left">
+                              <a href="mon.compte-nickel.fr"
+                                >mon.compte-nickel.fr</a
+                              >
+                            </td>
+                            <td>Possible Customer</td>
+                            <td>RUSSIAN MARKET</td>
+                            <td class="price-column">On Sale</td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="text-left">
+                              <a href="mon.compte-nickel.fr"
+                                >mon.compte-nickel.fr</a
+                              >
+                            </td>
+                            <td>Possible Customer</td>
+                            <td>RUSSIAN MARKET</td>
+                            <td class="price-column">On Sale</td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="text-left">
+                              <a href="mon.compte-nickel.fr"
+                                >mon.compte-nickel.fr</a
+                              >
+                            </td>
+                            <td>Possible Customer</td>
+                            <td>RUSSIAN MARKET</td>
+                            <td class="price-column">On Sale</td>
+                          </tr>
+                          <tr role="row" class="even blur">
+                            <td class="text-left">
+                              <a href="mon.compte-nickel.fr"
+                                >mon.compte-nickel.fr</a
+                              >
+                            </td>
+                            <td>Possible Customer</td>
+                            <td>RUSSIAN MARKET</td>
+                            <td class="price-column">On Sale</td>
+                          </tr>
+                          <tr role="row" class="odd blur">
+                            <td class="text-left">
+                              <a href="mon.compte-nickel.fr"
+                                >mon.compte-nickel.fr</a
+                              >
+                            </td>
+                            <td>Possible Customer</td>
+                            <td>RUSSIAN MARKET</td>
+                            <td class="price-column">On Sale</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dt-toolbar-footer">
+                        <div class="col-xs-3 col-sm-5"></div>
+                        <div class="col-sm-3 hidden-xs"></div>
+                        <div class="col-xs-9 col-sm-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-more-card">
+                    <div
+                      class="not-found"
+                      style="display: none"
+                      id="stealer-logs-for-sale-not-found"
+                    >
+                      Stealer Logs For Sale Not Found
+                    </div>
+                    <div
+                      class="more-found"
+                      style=""
+                      id="stealer-logs-for-sale-more-found"
+                    >
+                      <span style="color: #ff4562">+</span
+                      ><span
+                        style="color: #ff4562"
+                        id="stealer-logs-for-sale-count"
+                        >22</span
+                      >
+                      Data for Sale
+                    </div>
+                    <div
+                      class="view-more-btn clickable"
+                      id="stealer-logs-for-sale-view-more"
+                      data-cy="dark-web-report-stealer-logs-for-sale-view-more-btn"
+                      style="opacity: 1"
+                    >
+                      View More
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="labs-card stealer-log-card" style="margin-top: 20px">
+                <div class="d-flex justify-content-between labs-card-header">
+                  <div class="labs-card-title">
+                    <img
+                      src="/labs/static/img/icon/external_attack/ip.svg"
+                      alt=""
+                    />
+                    <p>Stealer Log from Infected Machine</p>
+                  </div>
+                  <div id="stealer-log-scanning" class="labs-card-status">
+                    <div class="loader custom-loader"></div>
+                    <img
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                    <p class="scan-text">Scanning</p>
+                    <p class="complete-text">Completed</p>
+                  </div>
+                </div>
+                <div class="labs-card-body">
+                  <div class="table">
+                    <div
+                      id="stealerLogsTable_wrapper"
+                      class="dataTables_wrapper form-inline dt-bootstrap no-footer"
+                    >
+                      <div class="dt-toolbar">
+                        <div class="col-xs-8 col-sm-2"></div>
+                        <div
+                          class="col-sm-10 col-xs-12 hidden-xs actions"
+                        ></div>
+                      </div>
+                      <table
+                        class="stealerLogsTable dataTable no-footer"
+                        id="stealerLogsTable"
+                        style="width: 100%"
+                        role="grid"
+                      >
+                        <thead style="width: 100%" class="table-hover">
+                          <tr role="row">
+                            <th
+                              style="text-align: left; width: 125px"
+                              class="sorting_disabled text-left"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              Affected Assets
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 28px"
+                            >
+                              Tag
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 37px"
+                            >
+                              User
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 85px"
+                            >
+                              Machine IP
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="odd">
+                            <td
+                              valign="top"
+                              colspan="4"
+                              class="dataTables_empty"
+                            >
+                              No data available in table
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dt-toolbar-footer">
+                        <div class="col-xs-3 col-sm-5"></div>
+                        <div class="col-sm-3 hidden-xs"></div>
+                        <div class="col-xs-9 col-sm-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-more-card">
+                    <div
+                      class="not-found"
+                      style="display: none"
+                      id="stealer-log-not-found"
+                    >
+                      Stealer Logs Not Found
+                    </div>
+                    <div
+                      class="more-found"
+                      style=""
+                      id="stealer-log-more-found"
+                    >
+                      <span style="color: #ff4562">+</span
+                      ><span style="color: #ff4562" id="stealer-log-count"
+                        >39</span
+                      >
+                      Mentions
+                    </div>
+                    <div
+                      class="view-more-btn clickable"
+                      id="stealer-log-view-more"
+                      data-cy="dark-web-report-stealer-log-view-more-btn"
+                      style="opacity: 1"
+                    >
+                      View More
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="labs-card dark-web-mentions-card"
+                style="margin-top: 20px"
+              >
+                <div class="d-flex justify-content-between labs-card-header">
+                  <div class="labs-card-title">
+                    <img
+                      src="/labs/static/img/icon/external_attack/details.svg"
+                      alt=""
+                    />
+                    <p>Dark Web Mentions</p>
+                  </div>
+                  <div id="dark-web-mentions-scanning" class="labs-card-status">
+                    <div class="loader custom-loader"></div>
+                    <img
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                    <p class="scan-text">Scanning</p>
+                    <p class="complete-text">Completed</p>
+                  </div>
+                </div>
+                <div class="labs-card-body">
+                  <div class="table">
+                    <div
+                      id="darkWebMentionsTable_wrapper"
+                      class="dataTables_wrapper form-inline dt-bootstrap no-footer"
+                    >
+                      <div class="dt-toolbar">
+                        <div class="col-xs-8 col-sm-2"></div>
+                        <div
+                          class="col-sm-10 col-xs-12 hidden-xs actions"
+                        ></div>
+                      </div>
+                      <table
+                        class="darkWebMentionsTable dataTable no-footer"
+                        id="darkWebMentionsTable"
+                        style="width: 100%"
+                        role="grid"
+                      >
+                        <thead style="width: 100%" class="table-hover">
+                          <tr role="row">
+                            <th
+                              style="text-align: left; width: 87px"
+                              class="sorting_disabled text-left"
+                              rowspan="1"
+                              colspan="1"
+                            >
+                              Date
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 63px"
+                            >
+                              Content
+                            </th>
+                            <th
+                              class="sorting_disabled"
+                              rowspan="1"
+                              colspan="1"
+                              style="width: 123px"
+                            >
+                              Source
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr role="row" class="odd">
+                            <td class="text-left">2024-11-08</td>
+                            <td>*****</td>
+                            <td>HACKER FORUM</td>
+                          </tr>
+                          <tr role="row" class="even">
+                            <td class="text-left">2024-06-12</td>
+                            <td>*****</td>
+                            <td>HACKER FORUM</td>
+                          </tr>
+                          <tr role="row" class="odd">
+                            <td class="text-left">2024-06-07</td>
+                            <td>*****</td>
+                            <td>HACKER FORUM</td>
+                          </tr>
+                          <tr role="row" class="even blur">
+                            <td class="text-left">2024-06-07</td>
+                            <td>*****</td>
+                            <td>HACKER FORUM</td>
+                          </tr>
+                          <tr role="row" class="odd blur">
+                            <td class="text-left">2024-06-07</td>
+                            <td>*****</td>
+                            <td>HACKER FORUM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dt-toolbar-footer">
+                        <div class="col-xs-3 col-sm-5"></div>
+                        <div class="col-sm-3 hidden-xs"></div>
+                        <div class="col-xs-9 col-sm-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-more-card">
+                    <div
+                      class="not-found"
+                      style="display: none"
+                      id="dark-web-mentions-not-found"
+                    >
+                      Dark Web Mentions Not Found
+                    </div>
+                    <div
+                      class="more-found"
+                      style=""
+                      id="dark-web-mentions-more-found"
+                    >
+                      <span style="color: #ff4562">+</span
+                      ><span style="color: #ff4562" id="dark-web-mentions-count"
+                        >55</span
+                      >
+                      Mentions
+                    </div>
+                    <div
+                      class="view-more-btn clickable"
+                      id="dark-web-mentions-view-more"
+                      data-cy="dark-web-report-dark-web-mentions-view-more-btn"
+                      style="opacity: 1"
+                    >
+                      View More
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="labs-card hacker-mentions-card"
+                style="margin-top: 20px"
+              >
+                <div class="d-flex justify-content-between labs-card-header">
+                  <div class="labs-card-title">
+                    <img
+                      src="/labs/static/img/icon/external_attack/external_attack_hacker_image.svg"
+                      alt=""
+                    />
+                    <p>Hacker Channel Mentions</p>
+                  </div>
+                  <div id="hacker-mentions-scanning" class="labs-card-status">
+                    <div class="loader custom-loader"></div>
+                    <img
+                      src="/labs/static/img/icon/external_attack/check.svg"
+                      alt=""
+                    />
+                    <p class="scan-text">Scanning</p>
+                    <p class="complete-text">Completed</p>
+                  </div>
+                </div>
+                <div class="labs-card-body">
+                  <div class="table">
+                    <table
+                      class="hackerMentionsTable"
+                      id="hackerMentionsTable"
+                      style="width: 100%; display: none"
+                    >
+                      <thead style="width: 100%" class="table-hover">
+                        <tr>
+                          <th style="text-align: left">Date</th>
+                          <th>Content</th>
+                          <th>Source</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div class="view-more-card">
+                    <div
+                      class="not-found"
+                      style=""
+                      id="hacker-mentions-not-found"
+                    >
+                      Hacker Channel Mentions Not Found
+                    </div>
+                    <div
+                      class="more-found"
+                      style="display: none"
+                      id="hacker-mentions-more-found"
+                    >
+                      <span style="color: #ff4562">+</span
+                      ><span style="color: #ff4562" id="hacker-mentions-count"
+                        >0</span
+                      >
+                      Mentions
+                    </div>
+                    <div
+                      class="view-more-btn clickable"
+                      id="hacker-mentions-view-more"
+                      data-cy="dark-web-report-hacker-mentions-view-more-btn"
+                      style="display: none; opacity: 1"
+                    >
+                      View More
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="download-full-report"
+                id="download-button-container"
+                style="margin-top: 20px; opacity: 1"
+              >
+                <p>Dark Web Scan Result is Here!</p>
+                <a
+                  target="_blank"
+                  class="clickable"
+                  id="download-button-bottom-img"
+                  data-cy="dark-web-report-download-full-report-btn"
+                >
+                  <div class="download-button" style="font-size: 18px">
+                    <img
+                      style="color: rgba(255, 69, 98, 1)"
+                      src="/labs/static/img/download_full_report_vector.png"
+                      alt=""
+                    />
+                    Download Full Report
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p id="copyright">
+            Copyright © 2024 Threatinsights<br />All rights reserved.
+          </p>
+          <div class="footer-icons">
+            <a href="https://x.com/">
+              <img src="assets/img/twitter_icon.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/">
+              <img src="assets/img/linkedin_icon.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/">
+              <img src="assets/img/youtube_icon.svg" alt="" />
+            </a>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
