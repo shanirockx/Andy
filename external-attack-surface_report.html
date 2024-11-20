@@ -6,7 +6,7 @@
     <title>Threatinsights - The Cyber Threat Intelligence Specialists</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/result_report.css" />
+    <link rel="stylesheet" href="assets/css/external_report.css" />
   </head>
   <body>
     <div class="site-wrapper">
@@ -25,7 +25,16 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <img src="assets/img/hamburger.svg" alt="" />
+              <img
+                class="icon-hamburger"
+                src="assets/img/hamburger.svg"
+                alt=""
+              />
+              <img
+                class="icon-close"
+                src="assets/img/navbar_mobile_collapse_icon_close.svg"
+                alt=""
+              />
             </button>
             <div
               class="collapse navbar-collapse w-100"
@@ -66,7 +75,7 @@
       </aside>
       <main class="main-content">
         <div class="container external-attack-surface-result-container">
-          <div class="row" style="margin-top: 25px">
+          <div class="row mt-4">
             <div class="col-xl-9 col-lg-x12">
               <div
                 class="labs-card d-flex justify-content-between first-look-wrapper"
@@ -103,10 +112,9 @@
                     <div
                       class="d-flex justify-content-between"
                       id="general-scan-state"
-                      style="margin-bottom: -17px"
                     >
-                      <p class="key">Status:</p>
-                      <p class="value completed">Completed</p>
+                      <p class="key mb-0">Status:</p>
+                      <p class="value completed mb-0">Completed</p>
                     </div>
                   </div>
                   <div class="risk-chart">
@@ -121,30 +129,19 @@
                       alt="gauge-needle"
                       style="transform: rotate(298.8deg)"
                     />
-                    <p style="margin: 0 auto; text-align: center">
-                      Exposure Level
-                    </p>
+                    <p class="m-auto text-center">Exposure Level</p>
                   </div>
                 </div>
               </div>
-              <div
-                class="labs-card company-details-card"
-                style="margin-top: 23px"
-              >
+              <div class="labs-card company-details-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/details.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/details.svg" alt="" />
                     <p>Company Details</p>
                   </div>
                   <div class="labs-card-status completed">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="complete-text">Completed</p>
                   </div>
                 </div>
@@ -154,20 +151,12 @@
                       <tbody>
                         <tr>
                           <td>
-                            <img
-                              src="assets/img/world.svg"
-                              alt=""
-                            />Domain
+                            <img src="assets/img/world.svg" alt="" />Domain
                           </td>
                           <td>ctimaster.com</td>
                         </tr>
                         <tr>
-                          <td>
-                            <img
-                              src="assets/img/url.svg"
-                              alt=""
-                            />URL
-                          </td>
+                          <td><img src="assets/img/url.svg" alt="" />URL</td>
                           <td>
                             <a
                               class="anti-overflow"
@@ -178,28 +167,22 @@
                         </tr>
                         <tr>
                           <td>
-                            <img
-                              src="assets/img/location.svg"
-                              alt=""
-                            />IP Address
+                            <img src="assets/img/location.svg" alt="" />IP
+                            Address
                           </td>
                           <td>185.230.63.107</td>
                         </tr>
                         <tr>
                           <td>
-                            <img
-                              src="assets/img/cloud.svg"
-                              alt=""
-                            />Cloud Provider
+                            <img src="assets/img/cloud.svg" alt="" />Cloud
+                            Provider
                           </td>
                           <td>-</td>
                         </tr>
                         <tr>
                           <td>
-                            <img
-                              src="assets/img/title.svg"
-                              alt=""
-                            />Website Title
+                            <img src="assets/img/title.svg" alt="" />Website
+                            Title
                           </td>
                           <td>
                             <span class="anti-overflow"
@@ -210,10 +193,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <img
-                              src="assets/img/desc.svg"
-                              alt=""
-                            />Description
+                            <img src="assets/img/desc.svg" alt="" />Description
                           </td>
                           <td>
                             <span
@@ -236,10 +216,7 @@
                       id="world-map"
                       style="width: 100%; height: 100%; overflow: hidden"
                     >
-                      <div
-                        class="jvectormap-container"
-                        style="background-color: white"
-                      >
+                      <div class="jvectormap-container bg-white">
                         <svg width="358.57" height="240">
                           <defs></defs>
                           <g
@@ -2216,24 +2193,15 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="labs-card related-domain-card"
-                style="margin-top: 23px"
-              >
+              <div class="labs-card related-domain-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/related.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/related.svg" alt="" />
                     <p>Related Domain Summary</p>
                   </div>
                   <div class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -2252,11 +2220,10 @@
                       </div>
                       <table
                         id="relatedDomainTable"
-                        style="width: 100%"
-                        class="dataTable no-footer"
+                        class="dataTable no-footer w-100"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
                               class="sorting_disabled"
@@ -2304,33 +2271,20 @@
                     </div>
                     <div class="blur-wrapper"></div>
                   </div>
-                  <div class="not-found" style="display: block">
-                    Related Domain Not Found
-                  </div>
+                  <div class="not-found d-block">Related Domain Not Found</div>
                   <div class="more-found"><span>22</span> domain found</div>
-                  <div
-                    class="view-more-btn clickable"
-                    data-cy="external-attack-surface-related-domain-view-more-btn"
-                  >
-                    View More
-                  </div>
+                  <div class="view-more-btn clickable">View More</div>
                 </div>
               </div>
-              <div class="labs-card subdomain-card" style="margin-top: 23px">
+              <div class="labs-card subdomain-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/export.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/export.svg" alt="" />
                     <p>Subdomain Summary</p>
                   </div>
                   <div class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -2348,12 +2302,12 @@
                         ></div>
                       </div>
                       <table
-                        id="subdomainTable"
-                        style="width: 100%; display: table"
+                        id="subdomainTable w-100"
+                        style="display: table"
                         class="dataTable no-footer"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
                               class="sorting_disabled"
@@ -2394,29 +2348,18 @@
                   </div>
                   <div class="not-found">Subdomain Not Found</div>
                   <div class="more-found"><span>22</span> subdomain found</div>
-                  <div
-                    class="view-more-btn clickable"
-                    data-cy="external-attack-surface-subdomain-view-more-btn"
-                  >
-                    View More
-                  </div>
+                  <div class="view-more-btn clickable">View More</div>
                 </div>
               </div>
-              <div class="labs-card ip-card" style="margin-top: 23px">
+              <div class="labs-card ip-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/ip.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/ip.svg" alt="" />
                     <p>IP Address Summary</p>
                   </div>
                   <div class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -2434,12 +2377,12 @@
                         ></div>
                       </div>
                       <table
-                        id="ipTable"
-                        style="width: 100%; display: table"
+                        id="ipTable w-100"
+                        style="display: table"
                         class="dataTable no-footer"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
                               class="sorting_disabled"
@@ -2490,29 +2433,18 @@
                   </div>
                   <div class="not-found">IP Address Not Found</div>
                   <div class="more-found"><span>22</span> IP address found</div>
-                  <div
-                    class="view-more-btn clickable"
-                    data-cy="external-attack-surface-ip-address-view-more-btn"
-                  >
-                    View More
-                  </div>
+                  <div class="view-more-btn clickable">View More</div>
                 </div>
               </div>
-              <div class="labs-card vuln-card" style="margin-top: 23px">
+              <div class="labs-card vuln-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/vuln.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/vuln.svg" alt="" />
                     <p>Open Port and Vulnerability Summary</p>
                   </div>
                   <div class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -2531,11 +2463,10 @@
                       </div>
                       <table
                         id="vulnTable"
-                        style="width: 100%"
-                        class="dataTable no-footer"
+                        class="dataTable no-footer w-100"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
                               class="sorting_disabled"
@@ -2583,33 +2514,20 @@
                     </div>
                     <div class="blur-wrapper"></div>
                   </div>
-                  <div class="not-found" style="display: block">
-                    Open Port Not Found
-                  </div>
+                  <div class="not-found d-block">Open Port Not Found</div>
                   <div class="more-found"><span>0</span> open port found</div>
-                  <div
-                    class="view-more-btn clickable"
-                    data-cy="external-attack-surface-port-view-more-btn"
-                  >
-                    View More
-                  </div>
+                  <div class="view-more-btn clickable">View More</div>
                 </div>
               </div>
-              <div class="labs-card tech-card" style="margin-top: 23px">
+              <div class="labs-card tech-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/tech.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/tech.svg" alt="" />
                     <p>Products and Technologies</p>
                   </div>
                   <div class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -2628,11 +2546,10 @@
                       </div>
                       <table
                         id="techTable"
-                        style="width: 100%"
-                        class="dataTable no-footer"
+                        class="dataTable no-footer w-100"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
                               class="sorting_disabled"
@@ -2672,37 +2589,28 @@
                     </div>
                     <div class="blur-wrapper"></div>
                   </div>
-                  <div class="not-found" style="display: block">
+                  <div class="not-found d-block">
                     Products and technologies Not Found
                   </div>
                   <div class="more-found">
                     <span>0</span> Products and technologies found
                   </div>
-                  <div
-                    class="view-more-btn clickable"
-                    data-cy="external-attack-surface-product-tech-view-more-btn"
-                  >
-                    View More
-                  </div>
+                  <div class="view-more-btn clickable">View More</div>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-12 stat-card-download-button">
               <img
                 class="aaaaa clickable download-button"
-                data-cy="external-attack-surface-download-full-report-btn"
                 src="assets/img/download_external.svg"
                 alt=""
               />
-              <div class="labs-card preview-wrapper" style="margin-top: 23px">
+              <div class="labs-card preview-wrapper mt-4">
                 <div
                   class="d-flex justify-content-between labs-card-header preview"
                 >
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/preview.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/preview.svg" alt="" />
                     <p>Preview</p>
                   </div>
                 </div>
@@ -2711,10 +2619,7 @@
                     style="background: #10b981"
                     class="clearfix stat-card stat-card-related-domain clickable"
                   >
-                    <img
-                      src="assets/img/world_search_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/world_search_white.svg" alt="" />
                     <div class="right-side">
                       <p class="stat-number">0</p>
                       <p class="stat-title">Related Domain</p>
@@ -2724,10 +2629,7 @@
                     style="background: #8b5cf6"
                     class="clearfix stat-card stat-card-subdomain clickable"
                   >
-                    <img
-                      src="assets/img/subdomain_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/subdomain_white.svg" alt="" />
                     <div class="right-side">
                       <p class="stat-number">2</p>
                       <p class="stat-title">Subdomain</p>
@@ -2737,10 +2639,7 @@
                     style="background: #71717a"
                     class="clearfix stat-card stat-card-ip clickable"
                   >
-                    <img
-                      src="assets/img/ip_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/ip_white.svg" alt="" />
                     <div class="right-side">
                       <p class="stat-number">2</p>
                       <p class="stat-title">IP Address</p>
@@ -2750,10 +2649,7 @@
                     style="background: #0891b2"
                     class="clearfix stat-card stat-card-tech clickable"
                   >
-                    <img
-                      src="assets/img/tech_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/tech_white.svg" alt="" />
                     <div
                       class="right-side"
                       style="position: relative; top: -76px"
@@ -2768,10 +2664,7 @@
                     style="background: #f43f5e"
                     class="clearfix stat-card stat-card-vuln clickable"
                   >
-                    <img
-                      src="assets/img/vuln_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/vuln_white.svg" alt="" />
                     <div class="right-side">
                       <p class="stat-number">0</p>
                       <p class="stat-title">Vulnerability</p>
@@ -2781,10 +2674,7 @@
                     style="background: #fb923c; margin-bottom: 0"
                     class="clearfix stat-card stat-card-port clickable"
                   >
-                    <img
-                      src="assets/img/port_white.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/port_white.svg" alt="" />
                     <div class="right-side">
                       <p class="stat-number">0</p>
                       <p class="stat-title">Open Port</p>
@@ -2793,29 +2683,34 @@
                 </div>
               </div>
               <div class="labs-card socradar-card d-none d-xl-block">
-                <img src="assets/img/socradar.svg" alt="" />
+                <img src="assets/img/logo.png" alt="" />
                 <p class="cta-title">
                   Threat intelligence.<br />
                   Extended.
                   <img
                     style="display: block; margin: 0 auto; width: 104px"
-                    src="assets/img/line.png"
+                    src="assets/img/curve.svg"
                     alt=""
                   />
                 </p>
                 <p class="cta-subtitle">We empower you to know the unknowns.</p>
                 <div class="d-flex justify-content-around">
-                  <a
-                    target="_blank"
-                    href="https://socradar.io/extended-threat-intelligence/?utm_campaign=SOCRadar%20Labs&amp;utm_source=SOCRadar%20Labs%20Report&amp;utm_medium=Labs&amp;utm_term=Button&amp;utm_content=Extended%20Threat%20Intelligence"
-                    class="cta-btn free-access"
-                    style="width: 100%"
-                    data-cy="external-attack-surface-related-free-access-btn"
+                  <a target="_blank" href="" class="cta-btn free-access w-100"
                     >FREE ACCESS</a
                   >
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="request-demo">
+          <div class="demo-wrapper">
+            <p style="margin-right: 10px; margin-top: 0 !important">
+              See Your Attack Surface Through the Eyes of Threat Actors
+            </p>
+            <a target="_blank" href="">
+              <div class="request-button">Go To Free Edition</div>
+            </a>
           </div>
         </div>
         <footer class="footer">

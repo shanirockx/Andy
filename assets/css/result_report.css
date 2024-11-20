@@ -994,22 +994,6 @@ body {
   margin-bottom: 0;
 }
 
-.table {
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-}
-
-.table th {
-  text-align: center;
-}
-
-.table td {
-  text-align: center;
-  max-width: 300px;
-  overflow: hidden;
-}
-
 .found-variables p {
   color: #2f90b0;
   margin: 0;
@@ -1080,22 +1064,6 @@ body {
   color: #4d4d70;
   padding-top: 10px;
   box-sizing: border-box;
-}
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-.table td,
-.table th {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-.table > :not(caption) > * > * {
-  border: none;
-}
-.table a {
-  color: unset;
 }
 
 @media screen and (max-width: 756px) {

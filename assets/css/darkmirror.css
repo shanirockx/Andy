@@ -666,20 +666,6 @@ hr {
   margin-bottom: 20px !important;
 }
 
-.navbar-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px 0 20px;
-  position: relative;
-  bottom: 0;
-}
-
-.navbar-footer .access-now-btn:hover {
-  background-color: #db1937 !important;
-}
-
 .access-now-btn {
   background-color: #2f90b0;
   border-radius: 5px;
@@ -718,19 +704,6 @@ hr {
   width: 60px !important;
 }
 
-/* FOOTER */
-.footer {
-  background: rgba(251, 251, 251, 1);
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footer-icons a {
-  margin-left: 10px;
-}
-
 .navbar-mobile-collapse-icon {
   width: 50px;
   height: 50px;
@@ -756,29 +729,6 @@ hr {
 #customerLogo,
 #gartnerLogo {
   margin-top: 25px;
-}
-
-#footerLogo {
-  margin-top: 30px;
-}
-
-.footer-line {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#copyright {
-  font-family: "Inter";
-  font-size: 12px;
-  color: gray;
-  padding-bottom: 20px;
-  padding-top: 30px;
-  margin: 0px;
-}
-@media screen and (min-width: 1920px) {
-  .navbar-footer {
-    position: absolute;
-  }
 }
 
 @media screen and (max-width: 2100px) {
@@ -819,10 +769,6 @@ hr {
   .top-bar ul {
     margin: 0;
     padding-right: 18px;
-  }
-
-  .navbar-footer {
-    display: none;
   }
 
   .top-bar {
@@ -955,16 +901,6 @@ hr {
     width: 50px;
     height: 50px;
   }
-  .navbar-footer {
-    position: relative;
-  }
-  .navbar-footer p {
-    font-size: 18px !important;
-  }
-  .navbar-footer a {
-    font-size: 20px;
-    font-weight: 500;
-  }
   .main-content {
     margin-top: 10px;
   }
@@ -975,16 +911,10 @@ hr {
     padding: 0.75rem 1.25rem;
   }
 }
-
 @media screen and (max-width: 577px) {
   #customerLogo {
     width: 360px;
   }
-
-  #footerLogo {
-    width: 150px;
-  }
-
   .top-bar li {
     font-size: 10px;
   }
