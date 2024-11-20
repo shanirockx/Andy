@@ -11,56 +11,58 @@
   <body>
     <div class="site-wrapper">
       <aside class="sidebar">
-        <nav class="flex-column navbar navbar-expand-md p-0">
-          <a class="navbar-brand p-0" href="index.html">
-            <img src="assets/img/logo.png" alt="" />
-          </a>
-          <button
-            class="border-0 navbar-toggler p-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="assets/img/hamburger.svg" alt="" />
-          </button>
-          <div
-            class="collapse navbar-collapse w-100"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav w-100 flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="dark-web-report.html"
-                  ><img src="assets/img/dark_web_icon.svg" alt="" /> Dark Web
-                  Report</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="external-attack-surface.html"
-                  ><img
-                    src="assets/img/external_attack_surface_icon.svg"
-                    alt=""
-                  />
-                  External Attack Surface</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="darkmirror.html"
-                  ><img src="assets/img/dark_mirror_icon.svg" alt="" />
-                  DarkMirror</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ip-reputation.html"
-                  ><img src="assets/img/soc_tools_icon.svg" alt="" /> SOC
-                  Tools</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="sidebar-outer">
+          <nav class="flex-column navbar navbar-expand-md p-0">
+            <a class="navbar-brand p-0" href="index.html">
+              <img src="assets/img/logo.png" alt="" />
+            </a>
+            <button
+              class="border-0 navbar-toggler p-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="assets/img/hamburger.svg" alt="" />
+            </button>
+            <div
+              class="collapse navbar-collapse w-100"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav w-100 flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="dark-web-report.html"
+                    ><img src="assets/img/dark_web_icon.svg" alt="" /> Dark Web
+                    Report</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="external-attack-surface.html"
+                    ><img
+                      src="assets/img/external_attack_surface_icon.svg"
+                      alt=""
+                    />
+                    External Attack Surface</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="darkmirror.html"
+                    ><img src="assets/img/dark_mirror_icon.svg" alt="" />
+                    DarkMirror</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ip-reputation.html"
+                    ><img src="assets/img/soc_tools_icon.svg" alt="" /> SOC
+                    Tools</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </aside>
       <main class="main-content">
         <div
@@ -157,9 +159,7 @@
                     <p class="stat-number">
                       <span id="stat-card-credentials-count">272</span>
                     </p>
-                    <p class="stat-title">
-                      Employee Credential Leak
-                    </p>
+                    <p class="stat-title">Employee Credential Leak</p>
                   </div>
                 </div>
                 <div
@@ -182,9 +182,7 @@
                     <p class="stat-number">
                       <span id="stat-card-stealer-logs-for-sale-count">25</span>
                     </p>
-                    <p class="stat-title">
-                      Stealer Logs for Sale
-                    </p>
+                    <p class="stat-title">Stealer Logs for Sale</p>
                   </div>
                 </div>
                 <div
@@ -207,9 +205,7 @@
                     <p class="stat-number">
                       <span id="stat-card-stealer-count">42</span>
                     </p>
-                    <p class="stat-title">
-                      Stealer Logs
-                    </p>
+                    <p class="stat-title">Stealer Logs</p>
                   </div>
                 </div>
                 <div
@@ -334,10 +330,7 @@
                     </div>
                   </div>
                   <div class="view-more-card">
-                    <div
-                      class="not-found d-none"
-                      id="credentials-not-found"
-                    >
+                    <div class="not-found d-none" id="credentials-not-found">
                       Credentials Not Found
                     </div>
                     <div class="more-found" id="credentials-more-found">
@@ -361,16 +354,12 @@
                     target="_blank"
                     href="https://socradar.io/products/dark-web-monitoring/?utm_campaign=advancedarkwebmonitoring&amp;utm_source=freetools&amp;utm_medium=darkwebreportpage&amp;utm_term=darkwebmonitoring&amp;utm_content=quarrypage"
                   >
-                    <div class="request-button mt-2">
-                      Go To Free Edition
-                    </div>
+                    <div class="request-button mt-2">Go To Free Edition</div>
                   </a>
                 </div>
               </div>
 
-              <div
-                class="labs-card stealer-log-sale-card mt-4"
-              >
+              <div class="labs-card stealer-log-sale-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
                     <img src="assets/img/related.svg" alt="" />
@@ -610,10 +599,7 @@
                     </div>
                   </div>
                   <div class="view-more-card">
-                    <div
-                      class="not-found d-none"
-                      id="stealer-log-not-found"
-                    >
+                    <div class="not-found d-none" id="stealer-log-not-found">
                       Stealer Logs Not Found
                     </div>
                     <div class="more-found" id="stealer-log-more-found">
@@ -630,9 +616,7 @@
                 </div>
               </div>
 
-              <div
-                class="labs-card dark-web-mentions-card mt-4"
-              >
+              <div class="labs-card dark-web-mentions-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
                     <img src="assets/img/details.svg" alt="" />
@@ -746,9 +730,7 @@
                 </div>
               </div>
 
-              <div
-                class="labs-card hacker-mentions-card mt-4"
-              >
+              <div class="labs-card hacker-mentions-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
                     <img

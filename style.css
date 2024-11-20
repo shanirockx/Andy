@@ -8,12 +8,14 @@ a {
 .site-wrapper {
   display: flex;
   min-height: 100vh;
-  overflow-x: hidden;
 }
-.site-wrapper .sidebar {
+.site-wrapper .sidebar .sidebar-outer {
+  top: 0;
   width: 272px;
   padding: 17px;
   flex-shrink: 0;
+  position: sticky;
+  min-height: 100vh;
   background: #1a2237;
 }
 .site-wrapper .sidebar .navbar .navbar-brand {
