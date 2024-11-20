@@ -68,6 +68,7 @@ body {
     font-size: 26px;
     font-weight: 600;
     line-height: 34.4px;
+    color: #2F90B0;
 }
 
 .result_illustration {
@@ -154,7 +155,7 @@ body {
     width: 90%;
     height: 60px;
     margin-top: 15px;
-    background-color: #FF4562;
+    background-color: #2F90B0;
     color: white;
     font-weight: 400;
     display: none;
@@ -243,7 +244,7 @@ body {
 }
 
 .agreement a {
-    color: #FF4562 !important;
+    color: #2F90B0 !important;
     text-decoration: underline !important;
 }
 
@@ -267,7 +268,7 @@ body {
     font-size: 32px;
     font-weight: 600;
     line-height: 42.34px;
-    color: #FF4562;
+    color: #2F90B0;
 }
 
 .modal-info-description {
@@ -280,8 +281,8 @@ body {
 .modal-info-description-mobile {
     padding-right: 30px;
     padding-left: 30px;
-    display: none;,
-font-size: 16 px;
+    display: none;
+    font-size: 16px;
     font-weight: 400;
     color: #727578;
     background-color: #F3F3F3;
@@ -289,6 +290,7 @@ font-size: 16 px;
 
 .stat-number {
     font-size: 24px;
+    color: #2F90B0;
 }
 
 .stat-title {
@@ -320,7 +322,7 @@ font-size: 16 px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #FF4562;
+    background-color: #2F90B0;
     transition: 0.8s;
 }
 
@@ -363,7 +365,7 @@ font-size: 16 px;
 
 .request-demo {
     width: 100%;
-    background: #fd4561;
+    background: #2F90B0;
     height: 100px;
     margin-top: 100px;
 }
@@ -386,7 +388,7 @@ font-size: 16 px;
     text-align: center;
     float: right;
     cursor: pointer;
-    color: #fd4561;
+    color: #2F90B0;
     line-height: 53px;
 }
 
@@ -400,7 +402,7 @@ font-size: 16 px;
     align-items: center;
     text-align: center;
     float: right;
-    color: #fd4561;
+    color: #2F90B0;
     line-height: 53px;
 }
 
@@ -457,7 +459,7 @@ font-size: 16 px;
 }
 
 .custom-loader:before {
-    border: 1px solid #FD4561;
+    border: 1px solid #2F90B0;
     opacity: 0;
     animation-name: loader2-1;
 }
@@ -478,7 +480,7 @@ font-size: 16 px;
 }
 
 .custom-loader:after {
-    background-color: #FD4561;
+    background-color: #2F90B0;
     animation-name: loader-animation;
 }
 
@@ -867,7 +869,7 @@ font-size: 16 px;
 }
 
 .labs-card-status.scanning {
-    color: #FD4561
+    color: #2F90B0
 }
 
 .labs-card-status.scanning .loader {
@@ -972,6 +974,10 @@ font-size: 16 px;
     flex-direction: column;
 }
 
+.view-more-card span {
+    color: #2F90B0;
+}
+
 .stat-card {
     background: #FFFFFF;
     width: 205px;
@@ -1029,7 +1035,7 @@ font-size: 16 px;
 }
 
 .found-variables p {
-    color: #FF4562;
+    color: #2F90B0;
     margin: 0;
 }
 
@@ -1039,7 +1045,7 @@ font-size: 16 px;
     font-size: 15px;
     color: white;
     opacity: 0.35;
-    background: #FF4562;
+    background: #2F90B0;
     border-radius: 6px;
     text-align: center;
     padding-top: 5px;
@@ -1048,7 +1054,7 @@ font-size: 16 px;
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    border: 1px solid #FF4562;
+    border: 1px solid #2F90B0;
     cursor: pointer;
 }
 
