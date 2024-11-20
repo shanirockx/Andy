@@ -67,26 +67,16 @@
           id="deep-web-report-body"
           class="container deep-web-sonar-result-container"
         >
-          <div
-            class="row"
-            style="display: flex; flex-direction: column; align-items: center"
-          >
+          <div class="align-items-center flex-column row">
             <div class="col-xl-10 col-lg-x12 dark-web-search-result-col">
               <div
-                class="labs-card d-flex justify-content-around first-look-wrapper"
-                style="height: auto"
+                class="labs-card d-flex justify-content-around first-look-wrapper h-auto"
               >
                 <div class="risk-chart-sect">
                   <div class="scan-box">
-                    <div
-                      class="d-flex"
-                      id="general-scan-state"
-                      style="margin-bottom: -17px"
-                    >
-                      <p class="key">Status:</p>
-                      <p class="value completed" style="margin-left: 5px">
-                        Completed
-                      </p>
+                    <div class="d-flex" id="general-scan-state">
+                      <p class="key mb-0">Status:</p>
+                      <p class="value completed ms-2 mb-0">Completed</p>
                     </div>
                   </div>
                   <div class="risk-chart">
@@ -101,9 +91,7 @@
                       alt="gauge-needle"
                       style="transform: rotate(270deg)"
                     />
-                    <p style="margin: 0 auto; text-align: center">
-                      Exposure Level
-                    </p>
+                    <p class="m-auto text-center">Exposure Level</p>
                   </div>
                 </div>
                 <div class="labs-card-first-look-border"></div>
@@ -123,22 +111,17 @@
                         <div
                           id="download-button-img"
                           class="loading-bar-placeholder clickable"
-                          data-cy="dark-web-report-download-full-report-btn"
                         >
-                          <p id="loading-text" style="display: none">
+                          <p id="loading-text" class="d-none">
                             We are generating your report
                           </p>
                           <div class="successful-download-placeholder">
                             <img
                               id="completion-image"
-                              style=""
                               src="assets/img/download_full_report_vector_white.png"
                               alt=""
                             />
-                            <p
-                              id="download-full-report-text"
-                              style="display: block"
-                            >
+                            <p id="download-full-report-text" class="d-block">
                               Download Full Report
                             </p>
                           </div>
@@ -157,7 +140,6 @@
                 <div
                   id="credentials-stat-card-clickable"
                   class="clearfix stat-card stat-card-credential-leak clickable"
-                  data-cy="dark-web-report-credentials-stat-card-btn"
                 >
                   <div
                     id="credentials-stat-card-scanning"
@@ -170,15 +152,12 @@
                       alt=""
                     />
                   </div>
-                  <img
-                    src="assets/img/employee_credential_leak.svg"
-                    alt=""
-                  />
+                  <img src="assets/img/employee_credential_leak.svg" alt="" />
                   <div class="right-side">
                     <p class="stat-number">
                       <span id="stat-card-credentials-count">272</span>
                     </p>
-                    <p style="color: #424265" class="stat-title">
+                    <p class="stat-title">
                       Employee Credential Leak
                     </p>
                   </div>
@@ -186,7 +165,6 @@
                 <div
                   id="stealer-logs-for-sale-stat-card-clickable"
                   class="clearfix stat-card stat-card-stealer-logs-for-sale clickable"
-                  data-cy="dark-web-report-stealer-logs-for-sale-stat-card-btn"
                 >
                   <div
                     id="stealer-logs-for-sale-stat-card-scanning"
@@ -199,15 +177,12 @@
                       alt=""
                     />
                   </div>
-                  <img
-                    src="assets/img/stealer_log_for_sale.svg"
-                    alt=""
-                  />
+                  <img src="assets/img/stealer_log_for_sale.svg" alt="" />
                   <div class="right-side">
                     <p class="stat-number">
                       <span id="stat-card-stealer-logs-for-sale-count">25</span>
                     </p>
-                    <p style="color: #424265" class="stat-title">
+                    <p class="stat-title">
                       Stealer Logs for Sale
                     </p>
                   </div>
@@ -215,7 +190,6 @@
                 <div
                   id="stealer-logs-stat-card-clickable"
                   class="clearfix stat-card stat-card-stealer-logs clickable"
-                  data-cy="dark-web-report-stealer-logs-stat-card-btn"
                 >
                   <div
                     id="stealer-logs-stat-card-scanning"
@@ -228,15 +202,12 @@
                       alt=""
                     />
                   </div>
-                  <img
-                    src="assets/img/stealer_log.svg"
-                    alt=""
-                  />
+                  <img src="assets/img/stealer_log.svg" alt="" />
                   <div class="right-side">
                     <p class="stat-number">
                       <span id="stat-card-stealer-count">42</span>
                     </p>
-                    <p style="color: #424265" class="stat-title">
+                    <p class="stat-title">
                       Stealer Logs
                     </p>
                   </div>
@@ -244,7 +215,6 @@
                 <div
                   id="dark-web-hacker-stat-card-clickable"
                   class="clearfix stat-card stat-card-dark-web-hacker-mentions clickable"
-                  data-cy="dark-web-report-dark-web-hacker-mentions-stat-card-btn"
                 >
                   <div
                     id="dark-web-hacker-stat-card-scanning"
@@ -257,37 +227,28 @@
                       alt=""
                     />
                   </div>
-                  <img
-                    src="assets/img/dark_web_mentions.svg"
-                    alt=""
-                  />
+                  <img src="assets/img/dark_web_mentions.svg" alt="" />
                   <div class="right-side">
                     <p class="stat-number">
                       <span id="stat-card-hacker-dark-web-mentions-count"
                         >58</span
                       >
                     </p>
-                    <p style="color: #424265" class="stat-title">
+                    <p class="stat-title">
                       Dark Web &amp; Hacker Channel Mentions
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="labs-card credentials-card" style="margin-top: 20px">
+              <div class="labs-card credentials-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/vuln.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/vuln.svg" alt="" />
                     <p>Employee Credential Leak</p>
                   </div>
                   <div id="credentials-scanning" class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -305,15 +266,14 @@
                         ></div>
                       </div>
                       <table
-                        class="credentialsTable dataTable no-footer"
+                        class="credentialsTable dataTable no-footer w-100"
                         id="credentialsTable"
-                        style="width: 100%"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead lass="table-hover w-100">
                           <tr role="row">
                             <th
-                              style="text-align: left; width: 97px"
+                              style="width: 97px"
                               class="sorting_disabled text-left"
                               rowspan="1"
                               colspan="1"
@@ -375,27 +335,18 @@
                   </div>
                   <div class="view-more-card">
                     <div
-                      class="not-found"
-                      style="display: none"
+                      class="not-found d-none"
                       id="credentials-not-found"
                     >
                       Credentials Not Found
                     </div>
-                    <div
-                      class="more-found"
-                      id="credentials-more-found"
-                    >
-                      <span>+</span
-                      ><span id="credentials-count"
-                        >269</span
-                      >
+                    <div class="more-found" id="credentials-more-found">
+                      <span>+</span><span id="credentials-count">269</span>
                       Leaks
                     </div>
                     <div
-                      class="view-more-btn clickable"
+                      class="view-more-btn clickable opacity-100"
                       id="credentials-view-more"
-                      data-cy="dark-web-report-credentials-view-more-btn"
-                      style="opacity: 1"
                     >
                       View More
                     </div>
@@ -403,15 +354,14 @@
                 </div>
               </div>
 
-              <div class="request-demo" style="margin-top: 20px">
+              <div class="request-demo mt-4">
                 <div class="demo-wrapper">
                   <p>Visualize digital risk and reduce your attack surface</p>
                   <a
                     target="_blank"
-                    data-cy="dark-web-report-visualize-risk-btn"
                     href="https://socradar.io/products/dark-web-monitoring/?utm_campaign=advancedarkwebmonitoring&amp;utm_source=freetools&amp;utm_medium=darkwebreportpage&amp;utm_term=darkwebmonitoring&amp;utm_content=quarrypage"
                   >
-                    <div class="request-button" style="margin-top: 5px">
+                    <div class="request-button mt-2">
                       Go To Free Edition
                     </div>
                   </a>
@@ -419,15 +369,11 @@
               </div>
 
               <div
-                class="labs-card stealer-log-sale-card"
-                style="margin-top: 20px"
+                class="labs-card stealer-log-sale-card mt-4"
               >
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/related.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/related.svg" alt="" />
                     <p>Stealer Logs for Sale</p>
                   </div>
                   <div
@@ -435,10 +381,7 @@
                     class="labs-card-status"
                   >
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -457,14 +400,13 @@
                       </div>
                       <table
                         id="stealerLogsForSaleTable"
-                        style="width: 100%"
-                        class="dataTable no-footer"
+                        class="dataTable no-footer w-100"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
-                              style="text-align: left; width: 156px"
+                              style="width: 156px"
                               class="sorting_disabled text-left"
                               rowspan="1"
                               colspan="1"
@@ -559,8 +501,7 @@
                   </div>
                   <div class="view-more-card">
                     <div
-                      class="not-found"
-                      style="display: none"
+                      class="not-found d-none"
                       id="stealer-logs-for-sale-not-found"
                     >
                       Stealer Logs For Sale Not Found
@@ -570,17 +511,12 @@
                       id="stealer-logs-for-sale-more-found"
                     >
                       <span>+</span
-                      ><span
-                        id="stealer-logs-for-sale-count"
-                        >22</span
-                      >
+                      ><span id="stealer-logs-for-sale-count">22</span>
                       Data for Sale
                     </div>
                     <div
-                      class="view-more-btn clickable"
+                      class="view-more-btn clickable opacity-100"
                       id="stealer-logs-for-sale-view-more"
-                      data-cy="dark-web-report-stealer-logs-for-sale-view-more-btn"
-                      style="opacity: 1"
                     >
                       View More
                     </div>
@@ -588,21 +524,15 @@
                 </div>
               </div>
 
-              <div class="labs-card stealer-log-card" style="margin-top: 20px">
+              <div class="labs-card stealer-log-card mt-4">
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/ip.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/ip.svg" alt="" />
                     <p>Stealer Log from Infected Machine</p>
                   </div>
                   <div id="stealer-log-scanning" class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -620,15 +550,14 @@
                         ></div>
                       </div>
                       <table
-                        class="stealerLogsTable dataTable no-footer"
+                        class="stealerLogsTable dataTable no-footer w-100"
                         id="stealerLogsTable"
-                        style="width: 100%"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
-                              style="text-align: left; width: 125px"
+                              style="width: 125px"
                               class="sorting_disabled text-left"
                               rowspan="1"
                               colspan="1"
@@ -682,27 +611,18 @@
                   </div>
                   <div class="view-more-card">
                     <div
-                      class="not-found"
-                      style="display: none"
+                      class="not-found d-none"
                       id="stealer-log-not-found"
                     >
                       Stealer Logs Not Found
                     </div>
-                    <div
-                      class="more-found"
-                      id="stealer-log-more-found"
-                    >
-                      <span>+</span
-                      ><span id="stealer-log-count"
-                        >39</span
-                      >
+                    <div class="more-found" id="stealer-log-more-found">
+                      <span>+</span><span id="stealer-log-count">39</span>
                       Mentions
                     </div>
                     <div
-                      class="view-more-btn clickable"
+                      class="view-more-btn clickable opacity-100"
                       id="stealer-log-view-more"
-                      data-cy="dark-web-report-stealer-log-view-more-btn"
-                      style="opacity: 1"
                     >
                       View More
                     </div>
@@ -711,23 +631,16 @@
               </div>
 
               <div
-                class="labs-card dark-web-mentions-card"
-                style="margin-top: 20px"
+                class="labs-card dark-web-mentions-card mt-4"
               >
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
-                    <img
-                      src="assets/img/details.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/details.svg" alt="" />
                     <p>Dark Web Mentions</p>
                   </div>
                   <div id="dark-web-mentions-scanning" class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -745,15 +658,14 @@
                         ></div>
                       </div>
                       <table
-                        class="darkWebMentionsTable dataTable no-footer"
+                        class="darkWebMentionsTable dataTable no-footer w-100"
                         id="darkWebMentionsTable"
-                        style="width: 100%"
                         role="grid"
                       >
-                        <thead style="width: 100%" class="table-hover">
+                        <thead class="table-hover w-100">
                           <tr role="row">
                             <th
-                              style="text-align: left; width: 87px"
+                              style="width: 87px"
                               class="sorting_disabled text-left"
                               rowspan="1"
                               colspan="1"
@@ -815,27 +727,18 @@
                   </div>
                   <div class="view-more-card">
                     <div
-                      class="not-found"
-                      style="display: none"
+                      class="not-found d-none"
                       id="dark-web-mentions-not-found"
                     >
                       Dark Web Mentions Not Found
                     </div>
-                    <div
-                      class="more-found"
-                      id="dark-web-mentions-more-found"
-                    >
-                      <span>+</span
-                      ><span id="dark-web-mentions-count"
-                        >55</span
-                      >
+                    <div class="more-found" id="dark-web-mentions-more-found">
+                      <span>+</span><span id="dark-web-mentions-count">55</span>
                       Mentions
                     </div>
                     <div
-                      class="view-more-btn clickable"
+                      class="view-more-btn clickable opacity-100"
                       id="dark-web-mentions-view-more"
-                      data-cy="dark-web-report-dark-web-mentions-view-more-btn"
-                      style="opacity: 1"
                     >
                       View More
                     </div>
@@ -844,8 +747,7 @@
               </div>
 
               <div
-                class="labs-card hacker-mentions-card"
-                style="margin-top: 20px"
+                class="labs-card hacker-mentions-card mt-4"
               >
                 <div class="d-flex justify-content-between labs-card-header">
                   <div class="labs-card-title">
@@ -857,10 +759,7 @@
                   </div>
                   <div id="hacker-mentions-scanning" class="labs-card-status">
                     <div class="loader custom-loader"></div>
-                    <img
-                      src="assets/img/check.svg"
-                      alt=""
-                    />
+                    <img src="assets/img/check.svg" alt="" />
                     <p class="scan-text">Scanning</p>
                     <p class="complete-text">Completed</p>
                   </div>
@@ -868,13 +767,12 @@
                 <div class="labs-card-body">
                   <div class="table">
                     <table
-                      class="hackerMentionsTable"
+                      class="hackerMentionsTable w-100 d-none"
                       id="hackerMentionsTable"
-                      style="width: 100%; display: none"
                     >
-                      <thead style="width: 100%" class="table-hover">
+                      <thead class="table-hover w-100">
                         <tr>
-                          <th style="text-align: left">Date</th>
+                          <th class="text-left">Date</th>
                           <th>Content</th>
                           <th>Source</th>
                         </tr>
@@ -889,43 +787,33 @@
                       Hacker Channel Mentions Not Found
                     </div>
                     <div
-                      class="more-found"
-                      style="display: none"
+                      class="more-found d-none"
                       id="hacker-mentions-more-found"
                     >
-                      <span>+</span
-                      ><span id="hacker-mentions-count"
-                        >0</span
-                      >
+                      <span>+</span><span id="hacker-mentions-count">0</span>
                       Mentions
                     </div>
                     <div
-                      class="view-more-btn clickable"
+                      class="view-more-btn clickable d-none opacity-100"
                       id="hacker-mentions-view-more"
-                      data-cy="dark-web-report-hacker-mentions-view-more-btn"
-                      style="display: none; opacity: 1"
                     >
                       View More
                     </div>
                   </div>
                 </div>
               </div>
-
               <div
-                class="download-full-report"
+                class="download-full-report mt-4 opacity-100"
                 id="download-button-container"
-                style="margin-top: 20px; opacity: 1"
               >
                 <p>Dark Web Scan Result is Here!</p>
                 <a
                   target="_blank"
                   class="clickable"
                   id="download-button-bottom-img"
-                  data-cy="dark-web-report-download-full-report-btn"
                 >
                   <div class="download-button" style="font-size: 18px">
                     <img
-                      style="color: rgba(255, 69, 98, 1)"
                       src="assets/img/download_full_report_vector.png"
                       alt=""
                     />
@@ -936,7 +824,6 @@
             </div>
           </div>
         </div>
-
         <footer class="footer">
           <p id="copyright">
             Copyright © 2024 Threatinsights<br />All rights reserved.
