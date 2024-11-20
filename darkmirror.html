@@ -85,16 +85,14 @@
               >
                 <img
                   class="cve-trends-info-icon"
-                  src="/labs/static/img/icon/cve_trends/cve_trends_info_icon.svg"
+                  src="assets/img/cve_trends_info_icon.svg"
                   alt=""
                 />
                 <span style="position: relative; top: 1px">Info</span>
               </div>
               <div class="header-subscribe-area-subscribe-buttons">
-                <img
-                  src="/labs/static/img/icon/subscribe_bell.png"
-                  alt=""
-                /><span style="position: relative; top: 1px; left: 5px"
+                <img src="assets/img/subscribe_bell.png" alt="" /><span
+                  style="position: relative; top: 1px; left: 5px"
                   >Subscribe</span
                 >
               </div>
@@ -152,6 +150,244 @@
               ></canvas>
             </div>
           </div>
+          <div class="row search-filter-row parent-div justify-content-center">
+            <div class="parent-div">
+              <div class="child-div mb-1">Select Filter:</div>
+              <div class="child-div mb-1" id="categories">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M14.6667 18.3333H18.3333V14.6666H14.6667M14.6667 12.8333H18.3333V9.16663H14.6667M9.16666 7.33329H12.8333V3.66663H9.16666M14.6667 7.33329H18.3333V3.66663H14.6667M9.16666 12.8333H12.8333V9.16663H9.16666M3.66666 12.8333H7.33332V9.16663H3.66666M3.66666 18.3333H7.33332V14.6666H3.66666M9.16666 18.3333H12.8333V14.6666H9.16666M3.66666 7.33329H7.33332V3.66663H3.66666V7.33329Z"
+                    fill="#A0A3BD"
+                  />
+                </svg>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Industry
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <div
+                      class="category-filter-wrapper categories-category-filter"
+                    >
+                      <ul class="scrollable-list">
+                        <li class="filter">
+                          <span
+                            ><img
+                              src="assets/img/industry.webp"
+                              alt=""
+                              onerror="give_default_category_icon(this)" /></span
+                          ><span title="ALL" class="filter-key">ALL</span>
+                          <span class="filter-value">975</span>
+                        </li>
+
+                        <li class="filter">
+                          <span
+                            ><img
+                              src="assets/img/industry.webp"
+                              alt=""
+                              onerror="give_default_category_icon(this)" /></span
+                          ><span title="Accommodation" class="filter-key"
+                            >Accommodation</span
+                          >
+                          <span class="filter-value">300</span>
+                        </li>
+
+                        <li class="filter">
+                          <span
+                            ><img
+                              src="assets/img/industry.webp"
+                              alt=""
+                              onerror="give_default_category_icon(this)" /></span
+                          ><span
+                            title="Accommodation&amp;Food Services"
+                            class="filter-key"
+                            >Accommodation&amp;Food</span
+                          >
+                          <span class="filter-value">846</span>
+                        </li>
+
+                        <li class="filter">
+                          <span
+                            ><img
+                              src="assets/img/industry.webp"
+                              alt=""
+                              onerror="give_default_category_icon(this)" /></span
+                          ><span
+                            title="Administrative &amp; Support Services"
+                            class="filter-key"
+                            >Administrative &amp; S</span
+                          >
+                          <span class="filter-value">657</span>
+                        </li>
+
+                        <li class="filter">
+                          <span
+                            ><img
+                              src="assets/img/industry.webp"
+                              alt=""
+                              onerror="give_default_category_icon(this)" /></span
+                          ><span
+                            title="Administrative &amp;Waste Management "
+                            class="filter-key"
+                            >Administrative &amp;Wa</span
+                          >
+                          <span class="filter-value">409</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="child-div mb-1" id="countries">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M11 10.5417C10.3922 10.5417 9.80932 10.3003 9.37955 9.87049C8.94977 9.44072 8.70833 8.85783 8.70833 8.25004C8.70833 7.64225 8.94977 7.05936 9.37955 6.62959C9.80932 6.19982 10.3922 5.95837 11 5.95837C11.6078 5.95837 12.1907 6.19982 12.6205 6.62959C13.0502 7.05936 13.2917 7.64225 13.2917 8.25004C13.2917 8.55099 13.2324 8.84899 13.1172 9.12702C13.0021 9.40506 12.8333 9.65769 12.6205 9.87049C12.4077 10.0833 12.155 10.2521 11.877 10.3673C11.5989 10.4824 11.3009 10.5417 11 10.5417ZM11 1.83337C9.29819 1.83337 7.66609 2.50941 6.46273 3.71277C5.25937 4.91613 4.58333 6.54823 4.58333 8.25004C4.58333 13.0625 11 20.1667 11 20.1667C11 20.1667 17.4167 13.0625 17.4167 8.25004C17.4167 6.54823 16.7406 4.91613 15.5373 3.71277C14.3339 2.50941 12.7018 1.83337 11 1.83337Z"
+                    fill="#A0A3BD"
+                  />
+                </svg>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Country
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <div
+                      class="category-filter-wrapper countries-category-filter"
+                    >
+                      <ul class="scrollable-list"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="child-div mb-1" id="tags">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                >
+                  <path
+                    d="M5.04168 8.24996C5.40635 8.24996 5.75609 8.10509 6.01395 7.84723C6.27181 7.58937 6.41668 7.23963 6.41668 6.87496C6.41668 6.51029 6.27181 6.16055 6.01395 5.90269C5.75609 5.64482 5.40635 5.49996 5.04168 5.49996C4.677 5.49996 4.32727 5.64482 4.0694 5.90269C3.81154 6.16055 3.66668 6.51029 3.66668 6.87496C3.66668 7.23963 3.81154 7.58937 4.0694 7.84723C4.32727 8.10509 4.677 8.24996 5.04168 8.24996ZM15.9592 10.615C16.2892 10.945 16.5 11.4033 16.5 11.9166C16.5 12.4208 16.2983 12.8791 15.9592 13.2091L11.3758 17.7925C11.2058 17.9634 11.0037 18.099 10.7811 18.1915C10.5585 18.284 10.3198 18.3317 10.0788 18.3317C9.8377 18.3317 9.59901 18.284 9.37641 18.1915C9.15381 18.099 8.9517 17.9634 8.78168 17.7925L2.37418 11.385C2.03501 11.0458 1.83334 10.5875 1.83334 10.0833V5.49996C1.83334 4.48246 2.64918 3.66663 3.66668 3.66663H8.25001C8.75418 3.66663 9.21251 3.86829 9.54251 4.19829L15.9592 10.615ZM12.4117 5.23413L13.3283 4.31746L19.6258 10.615C19.965 10.945 20.1667 11.4125 20.1667 11.9166C20.1667 12.4208 19.965 12.8791 19.635 13.2091L14.7033 18.1408L13.7867 17.2241L19.0208 11.9166L12.4117 5.23413Z"
+                    fill="#A0A3BD"
+                  />
+                </svg>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton3"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Category
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton3"
+                  >
+                    <div class="category-filter-wrapper tags-category-filter">
+                      <ul class="scrollable-list">
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Sharing</span
+                          >
+                          <span class="filter-value">27241</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Selling</span
+                          >
+                          <span class="filter-value">22995</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Hack Announcement</span
+                          >
+                          <span class="filter-value">3072</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Partnership/Cooperation/Offer</span
+                          >
+                          <span class="filter-value">648</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Buying</span
+                          >
+                          <span class="filter-value">222</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Target Attack</span
+                          >
+                          <span class="filter-value">100</span>
+                        </li>
+
+                        <li class="filter">
+                          <span class="tags-icon"># </span
+                          ><span
+                            class="filter-key tags-button filter-category-key"
+                            >Network Access Selling/Buying</span
+                          >
+                          <span class="filter-value">1</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <footer class="footer">
           <p id="copyright">
@@ -175,35 +411,6 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/select2.min.js"></script>
-    <script>
-      description_status = false;
-
-      function showDescription() {
-        if (description_status === false) {
-          $("#darkMirrorDescription").slideDown();
-          description_status = true;
-          $("#descriptionButton").css("background-color", "#275e77");
-          $("#descriptionButton").css(
-            "-webkit-box-shadow",
-            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
-          );
-          $("#descriptionButton").css(
-            "-moz-box-shadow",
-            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
-          );
-          $("#descriptionButton").css(
-            "box-shadow",
-            "0px 4px 14px -5px rgba(0, 0, 0, 0.58)"
-          );
-        } else {
-          $("#darkMirrorDescription").slideUp();
-          description_status = false;
-          $("#descriptionButton").css("background-color", "#2F90B0");
-          $("#descriptionButton").css("-webkit-box-shadow", "none");
-          $("#descriptionButton").css("-moz-box-shadow", "none");
-          $("#descriptionButton").css("box-shadow", "none");
-        }
-      }
-    </script>
+    <script src="assets/js/darkmirror.js"></script>
   </body>
 </html>
