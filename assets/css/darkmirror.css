@@ -4,10 +4,11 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 80px;
 }
 
 .darkmirror-card {
-  background: #1a2237;
+  background: #fafafc;
   box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.11);
   border-radius: 13px;
 }
@@ -57,6 +58,21 @@
   align-items: center;
   gap: 10px;
   border-radius: 6px;
+  background-color: #1a2237;
+}
+
+.preview-date {
+  display: flex;
+  position: relative;
+  top: -7px;
+}
+
+.preview-date-entry {
+  position: relative;
+  left: 5px;
+  font-weight: 400;
+  width: 100%;
+  color: #a0a3bd;
 }
 
 .preview-col {
@@ -65,12 +81,151 @@
   align-items: center;
   height: fit-content;
   width: 47%;
+  padding: 0;
 }
 
+.preview-wrapper {
+  position: relative;
+  height: 150px;
+  margin-top: 45px;
+  transition: 0.6s all;
+  animation: 0.5s fade-animation;
+  cursor: pointer;
+}
 .preview-wrapper {
   height: auto;
   width: 100%;
   margin-top: 0;
+}
+
+@keyframes fade-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.preview-image {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.preview-content h3 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.preview-content p {
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.preview-top-bar {
+  width: 250px;
+  height: 30px;
+  background: #4d4d70;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  left: 135px;
+  color: #fafafc;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.preview-top-bar-tag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 11px;
+  width: 180px;
+}
+
+.preview-top-bar-date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 11px;
+  width: 53px;
+  margin-right: 10px;
+}
+
+.preview-wrapper:hover {
+  transform: scale(1.04);
+}
+
+.preview-wrapper:hover .darkmirror-card {
+  box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.16);
+}
+
+.preview-wrapper.active .darkmirror-card {
+  background-color: #efeff1;
 }
 
 .preview-content h3 {
@@ -118,6 +273,7 @@
   height: 300px !important;
   width: 49% !important;
   margin: 5px;
+  background: #1a2237;
 }
 
 .target-charts-canvas {
@@ -533,11 +689,11 @@ hr {
 }
 
 .bg-dark-blue {
-  background-color: #0a2342;
+  background-color: #1a2237;
 }
 
 .bg-socradar {
-  background-color: #0a2342;
+  background-color: #1a2237;
 }
 
 .content-container {
